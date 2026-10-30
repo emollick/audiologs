@@ -1,0 +1,1234 @@
+[
+  {
+    "key": "IT-4410",
+    "summary": "Onboarding: laptop + access for Tom Becker (start date Mon Mar 9)",
+    "type": "Service Request",
+    "project": "IT Helpdesk",
+    "status": "Resolved",
+    "resolution": "Done",
+    "priority": "Medium",
+    "assignee": "Raj Iyer",
+    "reporter": "Marcus Chen",
+    "created": "2026-02-23T10:02:11.000-0500",
+    "updated": "2026-03-20T16:40:09.000-0400",
+    "due": null,
+    "labels": [
+      "onboarding"
+    ],
+    "components": [
+      "Hardware",
+      "Access"
+    ],
+    "storyPoints": null,
+    "links": [],
+    "description": "New hire Tom Becker (Software Engineer, Platform) starts Monday Mar 9.\n\nPlease provision:\n* MacBook Pro 14\" (standard eng image)\n* Google Workspace, Slack, GitHub (halcyon-eng org), Jira, AWS SSO (read-only to start)\n* Badge access: Floor 3\n\nThanks!",
+    "comments": [
+      {
+        "author": "Raj Iyer",
+        "created": "2026-02-24T09:15:00.000-0500",
+        "body": "Laptop ordered. Vendor ETA 5-7 business days."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-03-11T09:03:44.000-0400",
+        "body": "Hi! Tom here, day 3 :) Just checking on the laptop? Using my phone for standups for now, no rush!"
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-03-17T08:58:12.000-0400",
+        "body": "Hi again! Day 7. Still no laptop. Marcus says I can't push code from my phone (I asked)."
+      },
+      {
+        "author": "Raj Iyer",
+        "created": "2026-03-17T11:20:31.000-0400",
+        "body": "Vendor backorder. Issued you a loaner from the storage closet in the meantime (asset tag HAL-0042). It's older but it works."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-03-17T14:02:55.000-0400",
+        "body": "Got it, thank you!! Small thing: the login screen still shows the previous user's account (gwhitfield). Can that be removed?"
+      },
+      {
+        "author": "Raj Iyer",
+        "created": "2026-03-18T10:11:02.000-0400",
+        "body": "Reimaged HAL-0042. Should be clean now."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-03-19T09:30:18.000-0400",
+        "body": "Still shows gwhitfield as a recent user after the reimage. Also his desktop wallpaper came back? It's a photo of a server rack with a sticky note on it."
+      },
+      {
+        "author": "Raj Iyer",
+        "created": "2026-03-20T16:38:47.000-0400",
+        "body": "That's cached in the MDM profile, it's harmless. Closing this out, welcome aboard!"
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-03-20T16:40:09.000-0400",
+        "body": "This request has been resolved. How did we do? Rate your experience: ★★★★★"
+      }
+    ]
+  },
+  {
+    "key": "FAC-219",
+    "summary": "3rd floor kitchen coffee machine making grinding noise and leaking",
+    "type": "Facilities Request",
+    "project": "Facilities",
+    "status": "Blocked",
+    "resolution": null,
+    "priority": "Medium",
+    "assignee": "Linda Okafor",
+    "reporter": "Jen Alvarez",
+    "created": "2026-08-31T08:12:40.000-0400",
+    "updated": "2026-10-20T07:55:03.000-0400",
+    "due": null,
+    "labels": [
+      "kitchen",
+      "floor-3"
+    ],
+    "components": [
+      "Kitchen & Breakroom"
+    ],
+    "storyPoints": null,
+    "links": [],
+    "description": "The espresso machine in the 3rd floor kitchen is making a loud grinding noise and there's a puddle under it every morning. Still makes coffee though.",
+    "comments": [
+      {
+        "author": "Linda Okafor",
+        "created": "2026-08-31T10:30:00.000-0400",
+        "body": "Thanks Jen. Service vendor booked for Tuesday 9/8, 10am-2pm window."
+      },
+      {
+        "author": "Linda Okafor",
+        "created": "2026-09-08T14:45:12.000-0400",
+        "body": "Vendor did not show. Rescheduled for 9/15."
+      },
+      {
+        "author": "Linda Okafor",
+        "created": "2026-09-15T12:01:33.000-0400",
+        "body": "Vendor did not show again. I've placed an OUT OF ORDER sign on the machine. Please do not use it."
+      },
+      {
+        "author": "Marcus Chen",
+        "created": "2026-09-22T09:14:08.000-0400",
+        "body": "FYI someone keeps taking the sign down."
+      },
+      {
+        "author": "Linda Okafor",
+        "created": "2026-09-22T09:40:51.000-0400",
+        "body": "I have now taped the sign to the machine. Please. Do not use the machine."
+      },
+      {
+        "author": "Linda Okafor",
+        "created": "2026-10-01T15:22:19.000-0400",
+        "body": "Vendor finally replied: the model is discontinued and parts are unavailable. Submitted a budget request for a replacement (~$2,400)."
+      },
+      {
+        "author": "Finance Approvals (bot)",
+        "created": "2026-10-05T11:00:00.000-0400",
+        "body": "Budget request FIN-REQ-8812 has been DEFERRED to Q1 per the current hiring and spend freeze."
+      },
+      {
+        "author": "Linda Okafor",
+        "created": "2026-10-20T07:55:03.000-0400",
+        "body": "Update: the grinding is now continuous, including overnight when nobody is using it. Please do NOT unplug it, it shares a circuit with the kitchen fridge. I'm handling it."
+      }
+    ]
+  },
+  {
+    "key": "FAC-230",
+    "summary": "Kitchen fridge cleanout this Friday 4pm - LABEL YOUR FOOD",
+    "type": "Task",
+    "project": "Facilities",
+    "status": "Done",
+    "resolution": "Done",
+    "priority": "Low",
+    "assignee": "Linda Okafor",
+    "reporter": "Linda Okafor",
+    "created": "2026-10-12T09:00:00.000-0400",
+    "updated": "2026-10-16T17:31:44.000-0400",
+    "due": null,
+    "labels": [
+      "kitchen",
+      "floor-3",
+      "recurring"
+    ],
+    "components": [
+      "Kitchen & Breakroom"
+    ],
+    "storyPoints": null,
+    "links": [],
+    "description": "Friendly reminder! The 3rd floor fridge will be cleaned out this Friday at 4pm. Anything without a name and date will be thrown away. No exceptions this time. 🙂",
+    "comments": [
+      {
+        "author": "Priya Raman",
+        "created": "2026-10-13T12:31:09.000-0400",
+        "body": "Whose is the glass container on the bottom shelf? It's been there since at least March."
+      },
+      {
+        "author": "Jen Alvarez",
+        "created": "2026-10-13T12:40:27.000-0400",
+        "body": "Not mine."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-13T13:02:55.000-0400",
+        "body": "Not mine."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-10-13T13:15:40.000-0400",
+        "body": "Not mine! Also is it supposed to be warm? It's in the fridge and it's warm."
+      },
+      {
+        "author": "Linda Okafor",
+        "created": "2026-10-13T14:00:02.000-0400",
+        "body": "I've moved it to the very back. Please don't open it."
+      },
+      {
+        "author": "Linda Okafor",
+        "created": "2026-10-16T17:30:15.000-0400",
+        "body": "Cleanout complete. The container has been disposed of. Facilities asks that whoever owns it please reach out to People Ops."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-16T17:31:44.000-0400",
+        "body": "This recurring task has been completed. Next occurrence created: FAC-241 (due Fri Nov 13)."
+      }
+    ]
+  },
+  {
+    "key": "WEB-877",
+    "summary": "Change 'Submit' button label to 'Continue' on onboarding step 3",
+    "type": "Story",
+    "project": "Web App",
+    "status": "Done",
+    "resolution": "Done",
+    "priority": "High",
+    "assignee": "Kevin Marsh",
+    "reporter": "Sam Patel",
+    "created": "2026-05-04T10:15:00.000-0400",
+    "updated": "2026-08-14T16:02:37.000-0400",
+    "due": null,
+    "labels": [
+      "copy",
+      "onboarding",
+      "growth"
+    ],
+    "components": [
+      "Onboarding"
+    ],
+    "storyPoints": 13,
+    "links": [],
+    "description": "As a new user, I want the button on step 3 to say 'Continue' instead of 'Submit' so that the flow feels less like filling out a tax form.\n\nAcceptance criteria:\n* Button label reads 'Continue'\n* No other changes",
+    "comments": [
+      {
+        "author": "Rosa Lindqvist",
+        "created": "2026-05-04T11:02:10.000-0400",
+        "body": "Design here. Shouldn't it be 'Next'? 'Continue' implies there was a pause."
+      },
+      {
+        "author": "Sam Patel",
+        "created": "2026-05-04T11:30:44.000-0400",
+        "body": "Good callout. Let's align in a sync."
+      },
+      {
+        "author": "Legal Review (bot)",
+        "created": "2026-05-06T09:00:00.000-0400",
+        "body": "Any copy change in the signup flow requires Legal review. Expected turnaround: 2-3 weeks."
+      },
+      {
+        "author": "Marcus Chen",
+        "created": "2026-05-21T14:18:33.000-0400",
+        "body": "Can we A/B test Submit vs Continue vs Next?"
+      },
+      {
+        "author": "Data Team",
+        "created": "2026-05-22T10:40:02.000-0400",
+        "body": "At current traffic we'd need ~6 weeks per variant for significance."
+      },
+      {
+        "author": "Sam Patel",
+        "created": "2026-06-03T16:55:19.000-0400",
+        "body": "Per today's sync: going with 'Proceed'."
+      },
+      {
+        "author": "Rosa Lindqvist",
+        "created": "2026-06-03T17:01:47.000-0400",
+        "body": "'Proceed' tested poorly in 2023. People thought it was a medical form."
+      },
+      {
+        "author": "Diane Fogel",
+        "created": "2026-07-09T08:12:00.000-0400",
+        "body": "Jumping in from the exec side. I'd love for it to say \"Let's go!\" with the exclamation point. Energy matters."
+      },
+      {
+        "author": "Sam Patel",
+        "created": "2026-07-09T08:30:21.000-0400",
+        "body": "Love it. Updated AC to \"Let's go!\""
+      },
+      {
+        "author": "Kevin Marsh",
+        "created": "2026-07-10T13:44:05.000-0400",
+        "body": "The apostrophe breaks the i18n pipeline. Need a ticket for that."
+      },
+      {
+        "author": "Sam Patel",
+        "created": "2026-08-14T15:58:00.000-0400",
+        "body": "Update from leadership offsite: we're reverting to 'Submit'. Thanks all for the great collaboration on this one. Closing!"
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-08-14T16:02:37.000-0400",
+        "body": "Story points (13) added to Sprint 41 velocity."
+      }
+    ]
+  },
+  {
+    "key": "PLAT-2340",
+    "summary": "Sprint 47 planning: estimates for Platform Modernization epic",
+    "type": "Task",
+    "project": "Platform Engineering",
+    "status": "In Progress",
+    "resolution": null,
+    "priority": "Medium",
+    "assignee": "Marcus Chen",
+    "reporter": "Marcus Chen",
+    "created": "2026-10-05T09:00:00.000-0400",
+    "updated": "2026-10-13T10:12:44.000-0400",
+    "due": null,
+    "labels": [
+      "planning"
+    ],
+    "components": [],
+    "storyPoints": null,
+    "links": [],
+    "description": "Team, please add your estimates by EOD Thursday so we can lock Sprint 47.\n\nIn scope:\n* PLAT-1874 Decommission bill-legacy-01 (3 pts)\n* PLAT-2105 Node 16 -> 20 upgrade (5 pts)\n* PLAT-2291 Flaky payment retry test (2 pts)\n* PLAT-2312 Write up postmortem (1 pt)\n\nReminder: velocity is a team metric!",
+    "comments": [
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-06T10:22:15.000-0400",
+        "body": "PLAT-1874 is still estimated at 3 points?"
+      },
+      {
+        "author": "Marcus Chen",
+        "created": "2026-10-06T10:30:00.000-0400",
+        "body": "Yes. It's just turning off a server."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-06T10:31:49.000-0400",
+        "body": "It has been 3 points for six sprints."
+      },
+      {
+        "author": "Marcus Chen",
+        "created": "2026-10-06T10:45:12.000-0400",
+        "body": "Let's not single out individual tickets. Happy to take this offline."
+      },
+      {
+        "author": "Priya Raman",
+        "created": "2026-10-13T10:05:33.000-0400",
+        "body": "Retro action item from last sprint: stop saying \"it's just\" in planning."
+      },
+      {
+        "author": "Marcus Chen",
+        "created": "2026-10-13T10:12:44.000-0400",
+        "body": "Noted! Great energy everyone. Sprint 47 is locked."
+      }
+    ]
+  },
+  {
+    "key": "WEB-901",
+    "summary": "Dark mode setting doesn't persist after page refresh",
+    "type": "Bug",
+    "project": "Web App",
+    "status": "Closed",
+    "resolution": "Won't Do",
+    "priority": "Low",
+    "assignee": null,
+    "reporter": "Tom Becker",
+    "created": "2026-03-24T15:10:00.000-0400",
+    "updated": "2026-10-18T00:00:04.000-0400",
+    "due": null,
+    "labels": [
+      "ui",
+      "settings"
+    ],
+    "components": [
+      "Settings"
+    ],
+    "storyPoints": null,
+    "links": [],
+    "description": "Steps to reproduce:\n1. Go to Settings > Appearance\n2. Turn on dark mode\n3. Refresh the page\n\nExpected: still dark\nActual: lights are back on (light mode)",
+    "comments": [
+      {
+        "author": "Kevin Marsh",
+        "created": "2026-03-25T10:00:12.000-0400",
+        "body": "Can't reproduce."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-03-25T10:14:40.000-0400",
+        "body": "Screen recording attached (dark_mode_repro.mov). It happens every time for me."
+      },
+      {
+        "author": "Kevin Marsh",
+        "created": "2026-03-25T16:22:08.000-0400",
+        "body": "Works on my machine. Moving to backlog."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-09-21T00:00:03.000-0400",
+        "body": "This issue has been automatically closed after 180 days without activity."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-09-21T09:12:51.000-0400",
+        "body": "Reopening, this is still happening."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-09-28T00:00:02.000-0400",
+        "body": "This issue has been automatically closed: no assignee for 7 days."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-09-28T09:40:17.000-0400",
+        "body": "Reopening. Please stop closing this."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-11T00:00:05.000-0400",
+        "body": "This issue has been automatically closed: reopened more than 2 times. Resolution set to Won't Do."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-18T00:00:04.000-0400",
+        "body": "Reporter permissions updated: Tom Becker can no longer reopen issues in WEB."
+      }
+    ]
+  },
+  {
+    "key": "PLAT-2291",
+    "summary": "Flaky test: test_payment_retry_backoff fails intermittently on CI",
+    "type": "Bug",
+    "project": "Platform Engineering",
+    "status": "To Do",
+    "resolution": null,
+    "priority": "Medium",
+    "assignee": "Jen Alvarez",
+    "reporter": "Jen Alvarez",
+    "created": "2026-07-02T11:20:00.000-0400",
+    "updated": "2026-10-21T02:47:19.000-0400",
+    "due": null,
+    "labels": [
+      "flaky-test",
+      "ci"
+    ],
+    "components": [
+      "billing-v2"
+    ],
+    "storyPoints": 2,
+    "links": [],
+    "description": "billing-v2/tests/test_retry.py::test_payment_retry_backoff fails on CI about 8% of the time. Can't reproduce locally. Error:\n\nAssertionError: expected 3 retry attempts, got 1148",
+    "comments": [
+      {
+        "author": "Jen Alvarez",
+        "created": "2026-07-09T16:02:44.000-0400",
+        "body": "Pulled 3 weeks of CI history. It only fails on runs between 02:00 and 04:00 UTC. Every other run passes."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-07-14T10:31:20.000-0400",
+        "body": "Added @retry(3) to the test so it stops blocking merges!"
+      },
+      {
+        "author": "Jen Alvarez",
+        "created": "2026-07-14T10:35:02.000-0400",
+        "body": "Tom. Please do not make the retry test retry. The test is ABOUT retries."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-07-14T11:12:48.000-0400",
+        "body": "Reverted, sorry! Now it fails 3 times in a row instead of once."
+      },
+      {
+        "author": "Jen Alvarez",
+        "created": "2026-09-30T02:58:11.000-0400",
+        "body": "Ran it on a loop overnight from my laptop. 02:00-04:00 it gets 1,148 retries. The extra 1,147 aren't coming from the test. Something else on the network is answering for the payment ledger."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-01T00:00:01.000-0400",
+        "body": "This issue has been in To Do for 90 days. Consider re-prioritizing or closing it."
+      },
+      {
+        "author": "Jen Alvarez",
+        "created": "2026-10-21T02:47:19.000-0400",
+        "body": "Came in tonight to catch it live. It's failing right now. Also, you can hear server fans from the stairwell. Do we have servers in this building?"
+      }
+    ]
+  },
+  {
+    "key": "PEOPLE-112",
+    "summary": "Mandatory: complete Q4 Security Awareness Training by Fri Oct 30",
+    "type": "Task",
+    "project": "People Ops",
+    "status": "In Progress",
+    "resolution": null,
+    "priority": "High",
+    "assignee": "Brenda Holt",
+    "reporter": "Brenda Holt",
+    "created": "2026-10-01T09:00:00.000-0400",
+    "updated": "2026-10-29T09:00:02.000-0400",
+    "due": null,
+    "labels": [
+      "compliance",
+      "all-hands"
+    ],
+    "components": [
+      "Compliance"
+    ],
+    "storyPoints": null,
+    "links": [],
+    "description": "Hi team! 👋 Our annual Security Awareness Training is due by Friday, October 30. It takes about 25 minutes. Topics this year: phishing, tailgating, password hygiene, and reporting unknown devices on the network.\n\nCompletion is required for SOC 2. Thank you!!",
+    "comments": [
+      {
+        "author": "Brenda Holt",
+        "created": "2026-10-08T09:00:00.000-0400",
+        "body": "Quick nudge! We're at 41% completion. Lunch-and-learn Thursday with pizza 🍕"
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-16T09:00:00.000-0400",
+        "body": "Reminder: 14 days remaining. Company completion: 41%."
+      },
+      {
+        "author": "Brenda Holt",
+        "created": "2026-10-19T10:15:22.000-0400",
+        "body": "Module 4 (\"Reporting unknown devices on the network\") is extra important this year. If you see a device you don't recognize, do not touch it. Report it."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-23T09:00:00.000-0400",
+        "body": "Reminder: 7 days remaining. Company completion: 43%."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-27T09:00:00.000-0400",
+        "body": "Reminder: 3 days remaining. Company completion: 43%."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-28T09:00:00.000-0400",
+        "body": "Reminder: 2 days remaining. Company completion: 43%."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-29T09:00:02.000-0400",
+        "body": "Reminder: 1 day remaining. Company completion: 43%. Escalating to managers: Marcus Chen (no response), Diane Fogel (no response)."
+      }
+    ]
+  },
+  {
+    "key": "PLAT-2105",
+    "summary": "Upgrade Node.js 16 -> 20 across all services (Node 16 is EOL)",
+    "type": "Task",
+    "project": "Platform Engineering",
+    "status": "In Progress",
+    "resolution": null,
+    "priority": "High",
+    "assignee": "Tom Becker",
+    "reporter": "Dave Kowalski",
+    "created": "2026-04-06T09:30:00.000-0400",
+    "updated": "2026-10-16T15:20:11.000-0400",
+    "due": null,
+    "labels": [
+      "tech-debt",
+      "security"
+    ],
+    "components": [
+      "Runtime"
+    ],
+    "storyPoints": 5,
+    "links": [],
+    "description": "Node 16 is end-of-life and failing our container scans. Upgrade every service to Node 20 LTS. Service list is in the platform inventory sheet.",
+    "comments": [
+      {
+        "author": "Tom Becker",
+        "created": "2026-09-14T17:02:31.000-0400",
+        "body": "37/38 services upgraded!! 🎉"
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-09-15T10:11:09.000-0400",
+        "body": "Last one is billing-legacy on bill-legacy-01. The inventory sheet says it's on Node 0.10. Is that a typo?"
+      },
+      {
+        "author": "Priya Raman",
+        "created": "2026-09-15T10:40:52.000-0400",
+        "body": "Not a typo. Skip it. See PLAT-1874."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-09-15T10:52:18.000-0400",
+        "body": "Ok! Also I can't find the repo for billing-legacy?"
+      },
+      {
+        "author": "Priya Raman",
+        "created": "2026-09-15T11:30:44.000-0400",
+        "body": "There isn't one. The only copy of the source was on Gary's laptop, and that was wiped when he left in 2016."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-10-16T15:18:02.000-0400",
+        "body": "Was it, though? HAL-0042 has a folder in /Users/Shared called billing-retry-WIP. Last modified this morning."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-10-16T15:20:11.000-0400",
+        "body": "I didn't open it."
+      }
+    ]
+  },
+  {
+    "key": "PLAT-2310",
+    "summary": "INCIDENT: checkout returning 500s, p99 latency 14s",
+    "type": "Bug",
+    "project": "Platform Engineering",
+    "status": "Done",
+    "resolution": "Done",
+    "priority": "Highest",
+    "assignee": "Dave Kowalski",
+    "reporter": "PagerDuty (bot)",
+    "created": "2026-09-15T03:12:00.000-0400",
+    "updated": "2026-09-18T11:04:37.000-0400",
+    "due": null,
+    "labels": [
+      "incident",
+      "sev1",
+      "checkout"
+    ],
+    "components": [
+      "checkout",
+      "billing-v2"
+    ],
+    "storyPoints": null,
+    "links": [],
+    "description": "[PagerDuty] SEV1 triggered: checkout-api error rate 38% (threshold 2%). p99 latency 14,210ms.",
+    "comments": [
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-09-15T03:14:20.000-0400",
+        "body": "Ack. Looking."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-09-15T03:31:02.000-0400",
+        "body": "Rolled back 4.18.2. No change."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-09-15T03:58:41.000-0400",
+        "body": "Primary DB CPU pegged at 100%. Top query is SELECT * FROM invoices WHERE status = 'PENDING_RETRY', ~40/sec. Source IP 10.0.6.12."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-09-15T04:20:15.000-0400",
+        "body": "10.0.6.12 doesn't resolve. Not in the CMDB. Not in AWS. It's on-prem? We don't have on-prem."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-09-15T05:40:09.000-0400",
+        "body": "Mitigated: rate-limited 10.0.6.12 at the DB proxy. Checkout recovering. Going back to bed."
+      },
+      {
+        "author": "Marcus Chen",
+        "created": "2026-09-15T09:02:12.000-0400",
+        "body": "Great work Dave! 🙌 Can we have the RCA by Friday for exec sync?"
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-09-17T18:44:30.000-0400",
+        "body": "RCA draft: a machine nobody owns has been retrying the same 1,147 invoices every night since August 2016. Last night it noticed the rate limit and started rotating through source ports."
+      },
+      {
+        "author": "Marcus Chen",
+        "created": "2026-09-18T11:00:01.000-0400",
+        "body": "Can we make the RCA a bit more customer-friendly?"
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-09-18T11:04:37.000-0400",
+        "body": "Updated RCA: \"A legacy dependency experienced elevated retry behavior.\" Closing. Follow-up: PLAT-1874."
+      }
+    ]
+  },
+  {
+    "key": "IT-4451",
+    "summary": "Printer PRN-3F-01 printing jobs nobody sent",
+    "type": "Incident",
+    "project": "IT Helpdesk",
+    "status": "Open",
+    "resolution": null,
+    "priority": "Low",
+    "assignee": "Raj Iyer",
+    "reporter": "Jen Alvarez",
+    "created": "2026-10-07T08:44:10.000-0400",
+    "updated": "2026-10-15T09:31:55.000-0400",
+    "due": null,
+    "labels": [
+      "printer",
+      "floor-3"
+    ],
+    "components": [
+      "Printers"
+    ],
+    "storyPoints": null,
+    "links": [],
+    "description": "The 3rd floor printer printed ~400 pages overnight. Nobody I've asked sent anything. They're invoices. They're all dated 2016.",
+    "comments": [
+      {
+        "author": "Raj Iyer",
+        "created": "2026-10-07T10:02:33.000-0400",
+        "body": "Print queue is empty. Have you tried turning it off and on again?"
+      },
+      {
+        "author": "Jen Alvarez",
+        "created": "2026-10-07T10:05:01.000-0400",
+        "body": "Yes. It printed the same 400 pages again when it came back on."
+      },
+      {
+        "author": "Raj Iyer",
+        "created": "2026-10-08T14:20:47.000-0400",
+        "body": "Printer logs show the jobs come from 10.0.6.12. That IP isn't on our network."
+      },
+      {
+        "author": "Jen Alvarez",
+        "created": "2026-10-08T14:22:19.000-0400",
+        "body": "The printer is on our network, Raj."
+      },
+      {
+        "author": "Jen Alvarez",
+        "created": "2026-10-15T09:30:02.000-0400",
+        "body": "Counted this morning's batch: 1,147 invoices. Every one has \"RETRY PENDING - G.W.\" in the footer."
+      },
+      {
+        "author": "Raj Iyer",
+        "created": "2026-10-15T09:31:55.000-0400",
+        "body": "Unplugged the printer's network cable. Lowering priority to Low."
+      }
+    ]
+  },
+  {
+    "key": "PLAT-2350",
+    "summary": "Rotate on-call schedule (Dave has been primary for 6 weeks)",
+    "type": "Task",
+    "project": "Platform Engineering",
+    "status": "In Progress",
+    "resolution": null,
+    "priority": "High",
+    "assignee": "Marcus Chen",
+    "reporter": "Dave Kowalski",
+    "created": "2026-09-29T19:20:00.000-0400",
+    "updated": "2026-10-22T03:14:51.000-0400",
+    "due": null,
+    "labels": [
+      "on-call",
+      "team-health"
+    ],
+    "components": [],
+    "storyPoints": null,
+    "links": [],
+    "description": "I've been primary on-call for 6 consecutive weeks and have been paged at 3am for billing every single night. Requesting a rotation. Please.",
+    "comments": [
+      {
+        "author": "Marcus Chen",
+        "created": "2026-09-30T09:10:00.000-0400",
+        "body": "Totally hear you Dave. Tom will join the rotation once he's ramped up."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-09-30T09:12:41.000-0400",
+        "body": "Happy to help!!"
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-16T17:58:12.000-0400",
+        "body": "Taking PTO starting Mon Oct 19. Tom is primary. Tom: the runbook for bill-legacy-01 is one word long. The word is \"don't.\""
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-10-16T18:03:30.000-0400",
+        "body": "Got it! Have a great vacation Dave!"
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-16T18:05:02.000-0400",
+        "body": "Tom, whatever happens, do not go down to cage B."
+      },
+      {
+        "author": "PagerDuty (bot)",
+        "created": "2026-10-22T03:12:00.000-0400",
+        "body": "SEV2 triggered: billing-v2 ledger sync timeouts. On-call: Tom Becker."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-10-22T03:14:51.000-0400",
+        "body": "Paged for billing. Runbook says don't. Nobody's answering Slack. I'm going to go down and check on it."
+      }
+    ]
+  },
+  {
+    "key": "FAC-231",
+    "summary": "Badge access needed for basement Cage B",
+    "type": "Facilities Request",
+    "project": "Facilities",
+    "status": "Waiting for Customer",
+    "resolution": null,
+    "priority": "Medium",
+    "assignee": "Linda Okafor",
+    "reporter": "Dave Kowalski",
+    "created": "2026-10-05T16:40:00.000-0400",
+    "updated": "2026-10-14T12:20:48.000-0400",
+    "due": null,
+    "labels": [
+      "badge-access"
+    ],
+    "components": [
+      "Security & Badges"
+    ],
+    "storyPoints": null,
+    "links": [],
+    "description": "Need badge access to Cage B in the basement so I can label and decommission a server (PLAT-1874). Right now I'm getting in by propping the stairwell door.",
+    "comments": [
+      {
+        "author": "Linda Okafor",
+        "created": "2026-10-06T09:12:55.000-0400",
+        "body": "Hi Dave, Cage B isn't on our floor plan. Which building is this?"
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-06T09:20:30.000-0400",
+        "body": "This one. Take the stairwell past the loading dock and go down one level."
+      },
+      {
+        "author": "Linda Okafor",
+        "created": "2026-10-06T10:45:12.000-0400",
+        "body": "Our building doesn't have a basement level, Dave."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-06T10:47:01.000-0400",
+        "body": "I was down there yesterday. It's very warm and there is a server in it."
+      },
+      {
+        "author": "Building Management",
+        "created": "2026-10-13T15:05:39.000-0400",
+        "body": "Per the lease, tenant space ends at the ground floor. Level B was sealed for decommissioned storage in 2016. There is no power provisioned to Level B."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-14T12:20:48.000-0400",
+        "body": "Then I'd love to know what it's plugged into."
+      }
+    ]
+  },
+  {
+    "key": "PLAT-1874",
+    "summary": "Decommission legacy billing server bill-legacy-01",
+    "type": "Task",
+    "project": "Platform Engineering",
+    "status": "Reopened",
+    "resolution": null,
+    "priority": "Highest",
+    "assignee": "Priya Raman",
+    "reporter": "Marcus Chen",
+    "created": "2026-08-03T09:00:00.000-0400",
+    "updated": "2026-10-14T18:33:21.000-0400",
+    "due": null,
+    "labels": [
+      "tech-debt",
+      "decommission",
+      "billing"
+    ],
+    "components": [
+      "billing-legacy"
+    ],
+    "storyPoints": 3,
+    "links": [
+      "relates to PLAT-1650",
+      "is blocked by PLAT-88"
+    ],
+    "description": "bill-legacy-01 is the last box running the 2011 billing monolith. All traffic was migrated to billing-v2 in Nov 2023 (PLAT-1650). Shut it down and reclaim the rack.\n\nShould be quick.",
+    "comments": [
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-08-04T11:02:10.000-0400",
+        "body": "It's not in the CMDB. Nobody knows which rack it's in."
+      },
+      {
+        "author": "Priya Raman",
+        "created": "2026-08-12T15:40:22.000-0400",
+        "body": "Network team says it's still receiving ~200 req/min. From where? billing-v2 has no reference to it. I grepped everything."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-08-20T10:13:47.000-0400",
+        "body": "Found a wiki page from 2013: \"DO NOT RESTART bill-legacy-01. Ask Gary.\""
+      },
+      {
+        "author": "Marcus Chen",
+        "created": "2026-08-20T10:30:00.000-0400",
+        "body": "Who is Gary?"
+      },
+      {
+        "author": "Priya Raman",
+        "created": "2026-08-20T10:41:19.000-0400",
+        "body": "Gary Whitfield. Principal engineer. Left in 2016. See PLAT-88."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-05T16:30:55.000-0400",
+        "body": "Traced the cable. It's in the basement, Cage B. Room isn't on the floor plan (FAC-231). The fan noise is a lot."
+      },
+      {
+        "author": "Priya Raman",
+        "created": "2026-10-07T12:00:00.000-0400",
+        "body": "Shutdown scheduled for Friday Oct 9, 6pm. Change request CHG-1092 approved."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-09T18:07:12.000-0400",
+        "body": "Shut it down at 18:02. billing-v2 started throwing ledger sync timeouts at 18:03. Powered it back on at 18:05. Everything recovered. Reopening."
+      },
+      {
+        "author": "Priya Raman",
+        "created": "2026-10-09T18:20:31.000-0400",
+        "body": "That's not possible. billing-v2 doesn't call it. There is no code path."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-09T18:22:04.000-0400",
+        "body": "Then why did everything come back when I turned it on?"
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-14T18:33:21.000-0400",
+        "body": "Went down to label it. The console was logged in. User: gwhitfield. Session idle time: 3,701 days. There's a sticky note on the monitor that says \"almost done, back Monday.\""
+      }
+    ]
+  },
+  {
+    "key": "PLAT-2312",
+    "summary": "Postmortem: Oct 9 billing outage (bill-legacy-01 shutdown)",
+    "type": "Task",
+    "project": "Platform Engineering",
+    "status": "To Do",
+    "resolution": null,
+    "priority": "High",
+    "assignee": "Marcus Chen",
+    "reporter": "Priya Raman",
+    "created": "2026-10-10T10:00:00.000-0400",
+    "updated": "2026-10-27T00:00:01.000-0400",
+    "due": "2026-10-16",
+    "labels": [
+      "postmortem",
+      "blameless"
+    ],
+    "components": [
+      "billing-legacy"
+    ],
+    "storyPoints": 1,
+    "links": [],
+    "description": "## Summary\nTBD\n\n## Impact\n3 minutes of failed ledger syncs.\n\n## Root cause\nTBD\n\n## Action items\n- [ ] Find out what bill-legacy-01 actually does (owner: ???)\n- [ ] Find Gary (owner: People Ops)\n- [ ] Update runbook (owner: Dave)",
+    "comments": [
+      {
+        "author": "Marcus Chen",
+        "created": "2026-10-15T16:00:00.000-0400",
+        "body": "Postmortem review moved to next week. Calendars are tough!"
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-10-16T17:40:12.000-0400",
+        "body": "Runbook updated."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-17T00:00:01.000-0400",
+        "body": "This issue is past its due date (Oct 16)."
+      },
+      {
+        "author": "Marcus Chen",
+        "created": "2026-10-21T16:30:44.000-0400",
+        "body": "Moving the review again. Is Priya out this week? She hasn't been on Slack since Tuesday."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-27T00:00:01.000-0400",
+        "body": "This issue is 11 days past its due date. Assignee has been notified. Assignee has not responded."
+      }
+    ]
+  },
+  {
+    "key": "PLAT-1650",
+    "summary": "Billing v2 migration",
+    "type": "Epic",
+    "project": "Platform Engineering",
+    "status": "Done",
+    "resolution": "Done",
+    "priority": "High",
+    "assignee": "Priya Raman",
+    "reporter": "Diane Fogel",
+    "created": "2022-01-10T09:00:00.000-0500",
+    "updated": "2023-11-17T17:45:00.000-0500",
+    "due": null,
+    "labels": [
+      "billing",
+      "migration",
+      "okr-2023"
+    ],
+    "components": [
+      "billing-v2"
+    ],
+    "storyPoints": null,
+    "links": [],
+    "description": "Migrate all billing workloads from the legacy monolith (billing-legacy) to billing-v2. Target: end of Q3 2023.",
+    "comments": [
+      {
+        "author": "Priya Raman",
+        "created": "2023-11-17T17:30:00.000-0500",
+        "body": "Cutover complete. 100% of traffic on billing-v2. bill-legacy-01 can be decommissioned, ticket to follow."
+      },
+      {
+        "author": "Diane Fogel",
+        "created": "2023-11-17T17:40:00.000-0500",
+        "body": "HUGE win team!! 🎉🎉 Champagne in the kitchen!"
+      },
+      {
+        "author": "Marcus Chen",
+        "created": "2023-11-17T17:45:00.000-0500",
+        "body": "So proud of this team. Closing the epic!"
+      }
+    ]
+  },
+  {
+    "key": "PEOPLE-38",
+    "summary": "Offboarding: Gary Whitfield (last day Fri Aug 26, 2016)",
+    "type": "Task",
+    "project": "People Ops",
+    "status": "In Progress",
+    "resolution": null,
+    "priority": "Medium",
+    "assignee": "Brenda Holt",
+    "reporter": "Brenda Holt",
+    "created": "2016-08-15T10:00:00.000-0400",
+    "updated": "2026-08-26T00:00:00.000-0400",
+    "due": null,
+    "labels": [
+      "offboarding"
+    ],
+    "components": [],
+    "storyPoints": null,
+    "links": [],
+    "description": "Offboarding checklist for Gary Whitfield (Principal Engineer). Last day: Friday Aug 26, 2016.\n\n- [x] Return laptop (HAL-0042)\n- [x] Revoke VPN\n- [x] Revoke badge\n- [x] Disable SSO accounts\n- [ ] Transfer ownership of services: bill-legacy-01 -> ???",
+    "comments": [
+      {
+        "author": "Brenda Holt",
+        "created": "2016-08-26T16:45:00.000-0400",
+        "body": "All items complete except service ownership. Gary says he'll \"wrap it up remotely over the weekend.\" Leaving this open until then!"
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2021-08-26T00:00:00.000-0400",
+        "body": "This issue has had no activity for 1,826 days."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-08-26T00:00:00.000-0400",
+        "body": "This issue has had no activity for 3,652 days."
+      },
+      {
+        "author": "Brenda Holt",
+        "created": "2026-10-21T11:02:39.000-0400",
+        "body": "Reopening for the SOC 2 audit: we need evidence that every offboarding item was completed. Does anyone know who owns bill-legacy-01 now?"
+      }
+    ]
+  },
+  {
+    "key": "PLAT-2333",
+    "summary": "Customers receiving duplicate 'Your payment failed' emails at 3:00am",
+    "type": "Bug",
+    "project": "Platform Engineering",
+    "status": "Blocked",
+    "resolution": null,
+    "priority": "High",
+    "assignee": "Dave Kowalski",
+    "reporter": "Ana Souza",
+    "created": "2026-09-08T09:15:00.000-0400",
+    "updated": "2026-10-02T13:31:10.000-0400",
+    "due": null,
+    "labels": [
+      "customer-impact",
+      "email",
+      "support-escalation"
+    ],
+    "components": [
+      "notifications"
+    ],
+    "storyPoints": null,
+    "links": [
+      "is blocked by PLAT-1874"
+    ],
+    "description": "Support has received 41 tickets this week from customers getting \"Your payment failed, we'll retry soon!\" emails at exactly 3:00am. The invoices referenced are from 2016. Several of these customers churned years ago. One of them is a company that no longer exists.",
+    "comments": [
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-09-08T11:40:21.000-0400",
+        "body": "Disabled the nightly-invoice-reconcile cron in k8s."
+      },
+      {
+        "author": "Ana Souza",
+        "created": "2026-09-09T08:02:14.000-0400",
+        "body": "Still happening. 3:00am on the dot."
+      },
+      {
+        "author": "Dave Kowalski",
+        "created": "2026-09-10T14:18:00.000-0400",
+        "body": "SMTP headers show the sender host is bill-legacy-01. Our cron isn't involved. Blocked on PLAT-1874."
+      },
+      {
+        "author": "Ana Souza",
+        "created": "2026-10-02T13:28:45.000-0400",
+        "body": "Customer replied to one of the emails asking us to please stop. We got an auto-reply back from bill-legacy-01."
+      },
+      {
+        "author": "Ana Souza",
+        "created": "2026-10-02T13:31:10.000-0400",
+        "body": "The auto-reply says: \"Thanks for your patience! Retry pending. I'll have this wrapped up by Monday. - Gary\""
+      }
+    ]
+  },
+  {
+    "key": "WEB-940",
+    "summary": "Typo on pricing page: 'Enterprice'",
+    "type": "Bug",
+    "project": "Web App",
+    "status": "Done",
+    "resolution": "Done",
+    "priority": "Low",
+    "assignee": "Kevin Marsh",
+    "reporter": "Diane Fogel",
+    "created": "2026-06-11T22:14:00.000-0400",
+    "updated": "2026-06-16T10:20:33.000-0400",
+    "due": null,
+    "labels": [
+      "copy",
+      "marketing-site"
+    ],
+    "components": [
+      "Marketing Site"
+    ],
+    "storyPoints": null,
+    "links": [],
+    "description": "The pricing page says 'Enterprice' on the top tier card. A prospect pointed it out ON A CALL. Please fix ASAP.",
+    "comments": [
+      {
+        "author": "Kevin Marsh",
+        "created": "2026-06-12T09:30:10.000-0400",
+        "body": "Fixed in staging."
+      },
+      {
+        "author": "Diane Fogel",
+        "created": "2026-06-12T15:02:00.000-0400",
+        "body": "Still shows on prod."
+      },
+      {
+        "author": "Kevin Marsh",
+        "created": "2026-06-12T15:10:48.000-0400",
+        "body": "CDN cache. Purged."
+      },
+      {
+        "author": "Diane Fogel",
+        "created": "2026-06-15T08:44:21.000-0400",
+        "body": "Still shows."
+      },
+      {
+        "author": "Kevin Marsh",
+        "created": "2026-06-16T10:20:33.000-0400",
+        "body": "You had the page open in a tab since Thursday. Please refresh. Closing."
+      }
+    ]
+  },
+  {
+    "key": "PLAT-88",
+    "summary": "billing: add retry on invoice push to ledger",
+    "type": "Story",
+    "project": "Platform Engineering",
+    "status": "In Progress",
+    "resolution": null,
+    "priority": "Medium",
+    "assignee": "Gary Whitfield (deactivated)",
+    "reporter": "Gary Whitfield (deactivated)",
+    "created": "2014-06-11T14:22:00.000-0400",
+    "updated": "2026-10-29T03:00:00.000-0400",
+    "due": null,
+    "labels": [
+      "billing"
+    ],
+    "components": [
+      "billing-legacy"
+    ],
+    "storyPoints": 2,
+    "links": [],
+    "description": "When the ledger is down, invoice pushes are dropped. Add a retry with backoff so we never lose an invoice.\n\nShould be a quick one.",
+    "comments": [
+      {
+        "author": "Gary Whitfield (deactivated)",
+        "created": "2015-02-03T11:10:00.000-0500",
+        "body": "Retry works. Backoff is a bit aggressive. Will tune."
+      },
+      {
+        "author": "Gary Whitfield (deactivated)",
+        "created": "2016-08-26T17:58:00.000-0400",
+        "body": "Nearly done! Running it from my branch on bill-legacy-01 for now, I'll merge after my last day. PLEASE DO NOT RESTART the box: the retry queue is in memory and hasn't been persisted to disk yet. 1,147 invoices in flight. I'll finish it Monday."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2019-06-11T00:00:00.000-0400",
+        "body": "This issue has had no activity for 1,000 days."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2023-06-11T00:00:00.000-0400",
+        "body": "This issue has had no activity for 2,460 days. Consider closing it."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-09-02T14:12:09.000-0400",
+        "body": "Hi! Doing some backlog cleanup. Is this still relevant? OK to close?"
+      },
+      {
+        "author": "Priya Raman",
+        "created": "2026-09-02T14:30:51.000-0400",
+        "body": "Please don't close this one."
+      },
+      {
+        "author": "Tom Becker",
+        "created": "2026-09-02T14:31:20.000-0400",
+        "body": "Why?"
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-28T03:00:00.000-0400",
+        "body": "Assignee is inactive. This issue has been reassigned to the next available team member: Tom Becker."
+      },
+      {
+        "author": "Automation for Jira (bot)",
+        "created": "2026-10-29T03:00:00.000-0400",
+        "body": "Assignee Tom Becker has not responded in 24 hours. This issue has been reassigned to the next available team member."
+      }
+    ]
+  }
+]

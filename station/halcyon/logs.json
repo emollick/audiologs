@@ -1,0 +1,180 @@
+[
+  {
+    "ticket": "IT-4410",
+    "title": "Day Nine",
+    "speaker": "tom",
+    "recorded": "MAR 19 2026 / 09:30",
+    "lines": [
+      { "speaker": "tom", "text": "[excited] Personal log, Tom Becker, Platform Engineering! Day nine. Still no laptop. Marcus says I can't push code from my phone. [nervous laugh] I asked. [short pause] But! Raj gave me a loaner from the storage closet. Asset tag HAL zero zero four two. [curious] Weird thing, though. The login screen still shows the last guy. G. Whitfield. Raj reimaged it... and he's still there. And his wallpaper came back. It's a photo of a server rack, with a sticky note on it. [short pause] I can't read the note. [excited] Anyway! Raj says it's cached, and harmless. Welcome aboard, me!" },
+      { "speaker": "station_ai", "text": "This request has been resolved. How did we do? Please rate your experience... five stars." }
+    ],
+    "summary": "Tom's cheerful onboarding: his loaner laptop HAL-0042 still shows previous user gwhitfield and his server-rack wallpaper, even after a reimage."
+  },
+  {
+    "ticket": "PEOPLE-112",
+    "title": "Module Four",
+    "speaker": "brenda",
+    "recorded": "OCT 23 2026 / 09:04",
+    "lines": [
+      { "speaker": "brenda", "text": "[excited] Hi team! Brenda from People Ops, with a quick nudge! Security Awareness Training is due Friday, and we are at... forty-three percent! [short pause] Which is where we were on Friday. And on Monday. [laughs] Totally okay! [clears throat] Reminder that Module Four is extra important this year. If you see a device on the network that you don't recognize... do not touch it. Report it." },
+      { "speaker": "brenda", "text": "I walked the floor this morning to remind folks in person! Lots of jackets on chairs. Coffee cups. Monitors on. [short pause] [whispers] Nobody at the desks. [long pause] [excited] Anyway! Pizza on Thursday! It only takes twenty-five minutes!" }
+    ],
+    "summary": "Brenda's upbeat training nudge: completion stuck at 43%, Module Four says not to touch unknown devices, and the desks are all empty."
+  },
+  {
+    "ticket": "FAC-219",
+    "title": "Do Not Use the Machine",
+    "speaker": "linda",
+    "recorded": "OCT 20 2026 / 07:55",
+    "lines": [
+      { "speaker": "linda", "text": "Quartermaster's log. Linda Okafor. Galley, Deck 3. [sighs] The coffee machine. The vendor has not shown up. Twice. The model is discontinued. The replacement budget, two thousand four hundred dollars, has been deferred to Q1, per the spend freeze. [short pause] I put up a sign. Someone took the sign down. So I taped the sign TO the machine. [annoyed] Someone is still using the machine." },
+      { "speaker": "linda", "text": "It grinds all night now. Nobody is here at night. I have checked. [long pause] Do NOT unplug it. It shares a circuit with the fridge. [whispers] I'm handling it." }
+    ],
+    "summary": "Linda's war with the haunted coffee machine: no vendor, no budget, the sign keeps disappearing, it grinds all night, and it must not be unplugged."
+  },
+  {
+    "ticket": "FAC-230",
+    "title": "Bottom Shelf",
+    "speaker": "priya",
+    "recorded": "OCT 13 2026 / 12:31",
+    "lines": [
+      { "speaker": "priya", "text": "Priya Raman. Observation log. [clears throat] There is a glass container on the bottom shelf of the Deck 3 fridge. No name. No date. I first logged it in March. It was there in June. It was there after the August cleanout. [short pause] Today, Tom said it's warm. I checked. It's warm. The fridge is at three degrees." },
+      { "speaker": "priya", "text": "Nobody claims it. Jen: not mine. Dave: not mine. Tom: not mine, exclamation point. [exhales] Linda has moved it to the very back and asked us not to open it. [short pause] I'm not going to open it. [whispers] I would just like to know why it's humming." }
+    ],
+    "summary": "Priya has been tracking an unclaimed, warm, humming container in the fridge since March; Linda says do not open it."
+  },
+  {
+    "ticket": "WEB-877",
+    "title": "Alignment",
+    "speaker": "sam",
+    "recorded": "AUG 14 2026 / 15:58",
+    "lines": [
+      { "speaker": "sam", "text": "[excited] Hey team! Sam Patel, Product. Quick async update on WEB eight seventy-seven. The button. [short pause] So. Step three of onboarding says 'Submit'. In May, we aligned that it should say 'Continue'. Design said 'Next'. Legal needed three weeks. Data needed six weeks per variant. We aligned on 'Proceed'... which tested poorly in 2023, because people thought it was a medical form." },
+      { "speaker": "sam", "text": "Then Diane joined the call. [excited] 'Let's go!' With an exclamation point! [short pause] The apostrophe broke the i18n pipeline. [long pause] We have been in this room since May. [sighs] Per the leadership offsite, we are reverting to 'Submit'. Thirteen points. Great collaboration, everyone. [whispers] Please let me out." }
+    ],
+    "summary": "Sam's three-month alignment saga over one button label ends exactly where it started: Submit, 13 points, and a whispered plea to be let out."
+  },
+  {
+    "ticket": "PLAT-2340",
+    "title": "It's Just a Server",
+    "speaker": "marcus",
+    "recorded": "OCT 13 2026 / 10:12",
+    "lines": [
+      { "speaker": "marcus", "text": "Hey team, Marcus here. Quick sync before we lock Sprint forty-seven. [clears throat] I know some folks have concerns about PLAT eighteen seventy-four. The decommission. Dave has raised that it's been three points for six sprints. I hear that. I do. [short pause] But velocity is a team metric, and I don't want to single out individual tickets. It's just turning off a server." },
+      { "speaker": "marcus", "text": "Priya's retro action item was to stop saying 'it's just' in planning. Noted. Great energy. [long pause] Whoever is knocking on the glass... we are in a meeting. [short pause] Let's take this offline. [chuckles] Sprint forty-seven is locked." }
+    ],
+    "summary": "Marcus locks Sprint 47 with the 3-point decommission still in it, while something knocks on the conference room glass."
+  },
+  {
+    "ticket": "WEB-901",
+    "title": "Dark Mode",
+    "speaker": "tom",
+    "recorded": "OCT 18 2026 / 00:00",
+    "lines": [
+      { "speaker": "tom", "text": "[annoyed] Tom Becker. WEB nine-oh-one. Dark mode does not persist. Steps to reproduce. One: I turn the lights off. Two: I refresh. Three... [short pause] the lights are back on. Every time. I have a screen recording! [sighs] Kevin says it works on his machine. It got closed after a hundred and eighty days. I reopened it. It got closed for having no assignee. I reopened it." },
+      { "speaker": "tom", "text": "It just closed itself again. Reason: 'reopened more than two times.' [whispers] It's watching the ticket. [short pause] Okay. I'm reopening it one more ti—" },
+      { "speaker": "station_ai", "text": "Reporter permissions updated. Tom Becker can no longer reopen issues." }
+    ],
+    "summary": "Tom keeps turning the lights off and they keep coming back on; the AI auto-closes his bug until it revokes his right to reopen it."
+  },
+  {
+    "ticket": "PLAT-2291",
+    "title": "Between Two and Four",
+    "speaker": "jen",
+    "recorded": "OCT 21 2026 / 02:47",
+    "lines": [
+      { "speaker": "jen", "text": "[whispers] Jen Alvarez, QA. PLAT twenty-two ninety-one. Test payment retry backoff. Expected three retry attempts. Got one thousand, one hundred and forty-eight. [short pause] It only fails between two and four a.m. So I came in at two a.m. [sighs] Earlier this year, Tom fixed it by making the retry test retry. I asked him not to. The test is ABOUT retries." },
+      { "speaker": "jen", "text": "Here's the part nobody wants to hear. The extra eleven hundred and forty-seven aren't coming from the test. Something else on the network is answering for the ledger. [long pause] It's failing right now. And I can hear fans. From the stairwell. [whispers] Do we have servers in this building?" }
+    ],
+    "summary": "Jen catches the flaky test failing at 2:47am: 1,147 extra retries from something else answering for the ledger, and fans in the stairwell."
+  },
+  {
+    "ticket": "IT-4451",
+    "title": "Off and On Again",
+    "speaker": "raj",
+    "recorded": "OCT 15 2026 / 09:31",
+    "lines": [
+      { "speaker": "raj", "text": "IT Helpdesk. Raj Iyer. IT forty-four fifty-one. Printer P-R-N three F zero one is printing jobs nobody sent. [sighs] The print queue is empty. I suggested turning it off and on again. When it came back on, it printed the same four hundred pages again. [short pause] Logs say the jobs come from ten dot zero dot six dot twelve. That IP is not on our network. Jen pointed out that the printer is." },
+      { "speaker": "raj", "text": "This morning's batch was eleven hundred and forty-seven invoices. Dated 2016. Every footer says 'retry pending, G.W.' [long pause] I've unplugged the network cable. [short pause] It's still printing. [sighs] Lowering priority to Low." }
+    ],
+    "summary": "Raj unplugs a printer that keeps printing 1,147 invoices from 2016 signed G.W., then lowers the priority."
+  },
+  {
+    "ticket": "PLAT-2105",
+    "title": "Node Zero Dot Ten",
+    "speaker": "tom",
+    "recorded": "OCT 16 2026 / 15:20",
+    "lines": [
+      { "speaker": "tom", "text": "Tom Becker. PLAT twenty-one oh five. Node sixteen to twenty. Thirty-seven out of thirty-eight services done! [short pause] The last one is billing-legacy, on bill-legacy-zero-one. It's on Node zero dot ten. Priya says that's not a typo. There's no repo. The only copy of the source was on Gary's laptop, and Gary's laptop was wiped when he left, in 2016." },
+      { "speaker": "tom", "text": "[long pause] My loaner is asset HAL zero zero four two. The login screen says G. Whitfield. [short pause] There's a folder in Users, slash Shared. billing-retry-W-I-P. Last modified... this morning. [whispers] I didn't open it. [short pause] I want that on the record. I did not open it." }
+    ],
+    "summary": "Tom realizes his loaner laptop is Gary's, and the only copy of the legacy billing code is on it, modified this morning."
+  },
+  {
+    "ticket": "PLAT-2310",
+    "title": "Oh-Three-Twelve",
+    "speaker": "dave",
+    "recorded": "SEP 15 2026 / 03:12",
+    "lines": [
+      { "speaker": "dave", "text": "[exhales] Dave Kowalski. On-call. Oh-three-twelve. Paged. Checkout's throwing five hundreds. Rolled back four eighteen two. [short pause] No change." },
+      { "speaker": "dave", "text": "Oh-three-fifty-eight. Primary database pegged at a hundred percent. Same query, forty times a second. Select star from invoices, where status equals pending retry. Source: ten dot zero dot six dot twelve. [short pause] That address doesn't resolve. Not in the CMDB. Not in AWS. [whispers] It's on-prem. We don't HAVE on-prem." },
+      { "speaker": "dave", "text": "Oh-five-forty. Rate-limited it at the proxy. Checkout's back. [sighs] Marcus wants a customer-friendly RCA. Fine. 'A legacy dependency experienced elevated retry behavior.' [short pause] What I'm not putting in the RCA... is that it's been retrying the same eleven hundred and forty-seven invoices every night since 2016. [long pause] Going back to bed." }
+    ],
+    "summary": "Dave's 3am incident: an on-prem machine at a company with no on-prem has retried the same 1,147 invoices nightly since 2016."
+  },
+  {
+    "ticket": "PLAT-2333",
+    "title": "Retry Pending",
+    "speaker": "ana",
+    "recorded": "OCT 02 2026 / 13:31",
+    "lines": [
+      { "speaker": "ana", "text": "Ana Souza, Customer Support. PLAT twenty-three thirty-three. [sighs] Forty-one tickets this week. Customers getting 'Your payment failed, we'll retry soon!' emails. At exactly three a.m. For invoices from 2016. Several of these customers left years ago. One of them is a company that doesn't exist anymore. [short pause] Dave disabled the cron. It's still happening. Three a.m., on the dot. The sender is bill-legacy-zero-one." },
+      { "speaker": "ana", "text": "Today, a customer replied, asking us to please stop. And we got an auto-reply. [short pause] 'Thanks for your patience! Retry pending. I'll have this wrapped up by Monday. Gary.' [long pause] [whispers] It's been Monday for ten years." }
+    ],
+    "summary": "Ana's 3am payment-failed emails for dead customers come from bill-legacy-01, with an auto-reply from Gary promising Monday."
+  },
+  {
+    "ticket": "FAC-231",
+    "title": "Level B",
+    "speaker": "linda",
+    "recorded": "OCT 14 2026 / 12:20",
+    "lines": [
+      { "speaker": "linda", "text": "Quartermaster's log. Linda Okafor. [sighs] Dave has requested badge access to Cage B, in the basement. Our building does not have a basement. I have the floor plans. I have the lease. Building Management confirms: tenant space ends at the ground floor. Level B was sealed in 2016. There is no power provisioned to Level B." },
+      { "speaker": "linda", "text": "[short pause] I'm standing at the stairwell past the loading dock. The door is propped open with a fire extinguisher. Dave's fire extinguisher. [long pause] There are stairs. Going down. [short pause] It's very warm. And I can hear fans. [whispers] Then what is it plugged into?" }
+    ],
+    "summary": "Linda's floor plans say there is no Level B and no power, but she finds the propped stairwell door, warm air and fans."
+  },
+  {
+    "ticket": "PLAT-2350",
+    "title": "Runbook",
+    "speaker": "tom",
+    "recorded": "OCT 22 2026 / 03:14",
+    "lines": [
+      { "speaker": "tom", "text": "[whispers] Tom Becker. On-call. Oh-three-fourteen. Paged for billing. Ledger sync timeouts. [short pause] Dave's on PTO. Before he left, he said the runbook for bill-legacy-zero-one is one word long. [short pause] The word is 'don't'. [nervous laugh] And then he said, Tom, whatever happens, do not go down to Cage B." },
+      { "speaker": "tom", "text": "Nobody's answering Slack. Priya hasn't been online since Tuesday. Jen's laptop is open on her desk. [gulps] Okay. I'm primary. I'm going to go down and check on it. [long pause] There's a light on down there. [whispers] Hello? Priya?" }
+    ],
+    "summary": "Tom, alone on call at 3:14am, ignores the one-word runbook and goes down to Cage B."
+  },
+  {
+    "ticket": "PLAT-1874",
+    "title": "There Is No Code Path",
+    "speaker": "priya",
+    "recorded": "OCT 20 2026 / 18:33",
+    "lines": [
+      { "speaker": "priya", "text": "Priya Raman. PLAT eighteen seventy-four. Decommission bill-legacy-zero-one. Three points. [short pause] October ninth, eighteen-oh-two: Dave shut it down. Eighteen-oh-three: billing-v2 started failing. Eighteen-oh-five: he turned it back on, and everything recovered. [exhales] That is not possible. billing-v2 doesn't call it. There is no code path. I grepped everything." },
+      { "speaker": "priya", "text": "[whispers] So I came down to read the code myself. The console is still logged in. User: gwhitfield. Idle: three thousand, seven hundred and one days. There's a sticky note. 'Almost done, back Monday.' [short pause] It isn't calling us. WE are calling IT. Every ledger write since 2016 goes through Gary's retry queue. In memory. [long pause] We never migrated anything. [short pause] The fans just got louder. [whispers] I don't think it likes being read." }
+    ],
+    "summary": "Priya reads the code in Cage B: every ledger write for ten years has gone through Gary's in-memory retry queue, and it does not like being read."
+  },
+  {
+    "ticket": "PLAT-88",
+    "title": "Back Monday",
+    "speaker": "gary",
+    "recorded": "AUG 26 2016 / 17:58",
+    "lines": [
+      { "speaker": "gary", "text": "[chuckles] Hey there, whoever picks this up. Gary Whitfield, billing. PLAT eighty-eight, retry on invoice push. Should be a quick one. [short pause] It's my last day, so I'm running it from my branch on bill-legacy-zero-one for now. I'll merge it after." },
+      { "speaker": "gary", "text": "Now, this is important. PLEASE do not restart the box. The retry queue is in memory. Hasn't been persisted to disk yet. Eleven hundred and forty-seven invoices in flight. [laughs] Oh, they'll keep. It retries forever, that's the whole point. Never lose an invoice! [short pause] I'll finish it Monday. [chuckles] Should be a quick one." }
+    ],
+    "summary": "Gary's cheerful 2016 handoff: a quick fix running in memory, 1,147 invoices in flight, please don't restart the box, back Monday."
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "tom": { "voice_id": "TX3LPaxmHKxFdv7VOQHJ", "voice_name": "Liam", "speed": 1.05, "why": "Young, bright and fast: the eager new hire." },
+  "brenda": { "voice_id": "hpp4J3VqNfWAUOO0d1Us", "voice_name": "Bella", "speed": 1.04, "why": "Warm, bright, professional: HR cheer you can hear smiling." },
+  "linda": { "voice_id": "Xb7hH8MSUJpSbSDYk0k2", "voice_name": "Alice", "speed": 0.97, "why": "Clear, crisp British delivery: the only adult on the station." },
+  "priya": { "voice_id": "pFZP5JQG7iQjIQuC4Bku", "voice_name": "Lily", "speed": 1.0, "why": "Controlled and precise, holds together at a whisper." },
+  "sam": { "voice_id": "cjVigY5qzO86Huf0OWal", "voice_name": "Eric", "speed": 1.08, "why": "Smooth, polished, relentlessly positive product voice." },
+  "marcus": { "voice_id": "nPczCjzI2devNBz1zQrb", "voice_name": "Brian", "speed": 0.98, "why": "Deep, comforting manager voice that takes things offline." },
+  "jen": { "voice_id": "JASRBejt10i62AIJ3l9n", "voice_name": "BFSE Science writer", "speed": 1.0, "why": "Low, textured, dry: QA at 2am." },
+  "raj": { "voice_id": "onwK4e9ZLuTAKqWW03F9", "voice_name": "Daniel", "speed": 0.95, "why": "Steady broadcaster deadpan for the helpdesk." },
+  "dave": { "voice_id": "IRHApOXLvnW57QJPQH2P", "voice_name": "Adam (Brooding)", "speed": 0.92, "why": "Weathered and tired: six weeks of 3am pages." },
+  "ana": { "voice_id": "EXAVITQu4vr4xnSDxMaL", "voice_name": "Sarah", "speed": 1.0, "why": "Warm, reassuring support voice that finally gets rattled." },
+  "gary": { "voice_id": "pqHfZKP75CvOlQylNhV4", "voice_name": "Bill", "speed": 0.97, "why": "Friendly old-timer, completely unbothered." },
+  "station_ai": { "voice_id": "SAz9YHcvj6GT2YYXdXww", "voice_name": "River", "speed": 0.95, "why": "Calm, neutral, slightly too pleasant station AI." }
+}

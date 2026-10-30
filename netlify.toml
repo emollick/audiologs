@@ -1,0 +1,26 @@
+# The demo is a static site: everything (including the voice files) is pre-generated, so there is no build step
+# and no API keys are needed at runtime.
+[build]
+  publish = "game"
+  command = "echo 'nothing to build'"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/audio/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/vendor/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"

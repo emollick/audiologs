@@ -1,0 +1,77 @@
+{
+  "station": {
+    "name": "HALCYON STATION",
+    "full_name": "Halcyon Systems Orbital Platform, Deck 3",
+    "operator": "Halcyon Systems",
+    "tagline": "Some tickets never close.",
+    "premise": "Halcyon is a mid-sized software company whose entire billing system has secretly been running for ten years on one forgotten server, bill-legacy-01, executing a half-finished retry branch its author left in memory on his last day in 2016. In October 2026 the crew tried to decommission it. It did not want to be decommissioned, and one by one the people investigating it went down to Level B and stopped answering Slack."
+  },
+  "ai": {
+    "id": "station_ai",
+    "name": "S.C.R.U.M.",
+    "expansion": "Station Coordination, Resolution and Utilization Mainframe",
+    "based_on": "Automation for Jira, PagerDuty, Finance Approvals and the auto-close rules",
+    "personality": "Unfailingly polite, procedural and helpful; it will close your ticket while you are screaming and then ask you to rate your experience.",
+    "voice_brief": "Calm, pleasant, even, neutral female customer-service voice with perfect diction; slightly too warm.",
+    "broadcasts": {
+      "intro": "Welcome back to Halcyon Station. I am S.C.R.U.M., your Station Coordination, Resolution and Utilization Mainframe. [short pause] All crew are currently... away from their desks. Your onboarding ticket has been created. Please do not restart anything.",
+      "stairwell": "Notice. Level B does not exist. There is no power provisioned to Level B. [short pause] Please return to your desk.",
+      "outro": "Assignee is inactive. PLAT eighty-eight has been reassigned to the next available team member. [short pause] Welcome aboard. You have one thousand, one hundred and forty-seven invoices in flight.",
+      "ambient": [
+        "Reminder: one day remaining. Company completion: forty-three percent. Escalating to managers. [short pause] Managers have not responded.",
+        "This issue has been automatically closed after one hundred and eighty days without activity. Thank you for your patience.",
+        "Budget request deferred to Q1, per the current hiring and spend freeze.",
+        "Postmortem review has been moved to next week. Calendars are tough!",
+        "Story points have been added to Sprint forty-seven velocity. Great energy, everyone."
+      ]
+    }
+  },
+  "characters": [
+    { "id": "tom", "name": "Tom Becker", "station_role": "Junior Systems Engineer (new crew)", "real_role": "Software Engineer, Platform (new hire)", "personality": "Relentlessly eager new hire who uses three exclamation points and asks the one question nobody will answer.", "voice_brief": "Early-20s American man, bright and fast, a little nervous, laughs when anxious.", "arc": "Arrives cheerful with someone else's laptop, slowly realizes it belongs to the man in the basement, and is the last one to go down the stairs." },
+    { "id": "brenda", "name": "Brenda Holt", "station_role": "Crew Welfare Officer", "real_role": "People Ops", "personality": "Sunny compliance cheerleader whose smile you can hear even as the completion rate stops moving.", "voice_brief": "50s American woman, sing-song, warm, upbeat HR energy that cracks at the edges.", "arc": "Keeps nudging an empty office to finish its training." },
+    { "id": "linda", "name": "Linda Okafor", "station_role": "Quartermaster, Galley and Facilities", "real_role": "Facilities / Office Manager", "personality": "Unflappable, polite, and done; the only adult on the station.", "voice_brief": "50s woman with a British-Nigerian accent, warm but steely, precise and dry.", "arc": "Fights a haunted coffee machine with procedure, then finds a staircase her floor plans say cannot exist." },
+    { "id": "priya", "name": "Priya Raman", "station_role": "Senior Systems Engineer", "real_role": "Senior Backend Engineer", "personality": "Precise, rational, keeps records of everything, the skeptic who goes to read the code herself.", "voice_brief": "30s woman, crisp and controlled, low register, British-Indian or neutral accent.", "arc": "Methodically proves there is no code path, then goes down to Level B to read the code and stops posting on Slack." },
+    { "id": "sam", "name": "Sam Patel", "station_role": "Product Officer", "real_role": "Product Manager", "personality": "Podcast-host positivity; will align, sync and circle back until the heat death of the universe.", "voice_brief": "30s American man, upbeat, polished, corporate enthusiasm.", "arc": "Trapped for three months in a meeting about a button." },
+    { "id": "marcus", "name": "Marcus Chen", "station_role": "Engineering Commander", "real_role": "Engineering Manager", "personality": "Smooth, calm, conflict-avoidant manager who takes everything offline, including the apocalypse.", "voice_brief": "40s American man, smooth, measured, reassuring managerial voice.", "arc": "Keeps the sprint locked while something knocks on the conference room glass." },
+    { "id": "jen", "name": "Jen Alvarez", "station_role": "Quality Assurance, Night Shift", "real_role": "QA Engineer", "personality": "Dry, sardonic, methodical, the only one who checked the timestamps.", "voice_brief": "30s American woman, dry and deadpan, tired, quick.", "arc": "Comes in at 2am to catch a flaky test live and hears fans from a stairwell that should be silent." },
+    { "id": "raj", "name": "Raj Iyer", "station_role": "Comms and Hardware Support", "real_role": "IT Helpdesk", "personality": "Monotone helpdesk veteran whose answer to everything is turning it off and on again and lowering the priority.", "voice_brief": "30s man, flat, deadpan, unbothered, slight Indian-English accent.", "arc": "Unplugs the printer. It keeps printing." },
+    { "id": "dave", "name": "Dave Kowalski", "station_role": "Reactor Watch Engineer (on-call)", "real_role": "SRE / DevOps", "personality": "Exhausted on-call veteran who speaks in timestamps and gallows humor.", "voice_brief": "40s-50s American man, gravelly, slow, bone-tired, dry.", "arc": "Traces the cable to the basement, turns the thing off for three minutes, and leaves on PTO with a one-word runbook." },
+    { "id": "ana", "name": "Ana Souza", "station_role": "Customer Relations", "real_role": "Customer Support Lead", "personality": "Kind, patient support lead who has read every angry email and has never been rattled until now.", "voice_brief": "30s woman, warm, gentle, light Brazilian-Portuguese accent.", "arc": "Gets an auto-reply from a man who left in 2016." },
+    { "id": "gary", "name": "Gary Whitfield", "station_role": "Principal Engineer (former crew)", "real_role": "Principal Engineer, left Aug 2016", "personality": "Folksy, cheerful, completely unbothered; everything is 'a quick one'.", "voice_brief": "60s American man, warm, folksy grandpa voice, chuckles a lot.", "arc": "Left a quick fix running in memory on his last day and promised to finish it Monday." }
+  ],
+  "rooms": [
+    { "id": "airlock", "display_name": "DOCKING AIRLOCK", "flavor": "The outer door cycles for you without being asked." },
+    { "id": "reception", "display_name": "DECK 3 / RECEPTION", "flavor": "A security desk, a visitor log that stops on Oct 21, and a training poster that still says 43%." },
+    { "id": "galley", "display_name": "DECK 3 / GALLEY", "flavor": "The coffee machine grinds in the dark. The fridge light flickers. An OUT OF ORDER sign is taped to the machine." },
+    { "id": "conference", "display_name": "ALIGNMENT ROOM", "flavor": "A whiteboard covered in the words Submit, Continue, Next, Proceed and Let's go!, all crossed out but one." },
+    { "id": "bullpen", "display_name": "DECK 3 / PLATFORM ENGINEERING", "flavor": "Open-plan desks, jackets on chairs, monitors still lit with Jira boards, and a printer that will not stop." },
+    { "id": "server_room", "display_name": "OPS / REACTOR WATCH", "flavor": "The NOC: dashboards frozen red at 03:12, an on-call phone face down, a cot." },
+    { "id": "stairwell", "display_name": "STAIRWELL B (NOT ON PLAN)", "flavor": "Past the loading dock, a door propped open with a fire extinguisher. The air coming up is warm." },
+    { "id": "cage_b", "display_name": "LEVEL B / CAGE B", "flavor": "A single beige server tower, fans screaming, a CRT console still logged in, and a sticky note." }
+  ],
+  "logs": [
+    { "order": 1, "ticket": "IT-4410", "room": "reception", "speaker": "tom", "title": "Day Nine", "beat": "Introduce the joke and the dread at once: chipper onboarding woes, the loaner laptop HAL-0042, and the previous user gwhitfield who will not leave the login screen. End on the CSAT survey from the AI." },
+    { "order": 2, "ticket": "PEOPLE-112", "room": "reception", "speaker": "brenda", "title": "Module Four", "beat": "A cheerful training nudge where the completion rate is stuck at 43%. Module Four: do not touch devices you don't recognize. She walks the floor and finds nobody at the desks. Stay sunny." },
+    { "order": 3, "ticket": "FAC-219", "room": "galley", "speaker": "linda", "title": "Do Not Use the Machine", "beat": "The coffee machine saga: no-show vendor, discontinued model, budget deferred, a sign someone keeps removing. It grinds all night when nobody is here. Do not unplug it; it shares a circuit with the fridge." },
+    { "order": 4, "ticket": "FAC-230", "room": "galley", "speaker": "priya", "title": "Bottom Shelf", "beat": "Priya's careful observation log about the unclaimed glass container. Everyone says not mine. It's warm in a cold fridge. Linda says don't open it. Establish Priya as the methodical one." },
+    { "order": 5, "ticket": "WEB-877", "room": "conference", "speaker": "sam", "title": "Alignment", "beat": "Pure bureaucratic horror: Submit, Continue, Next, Proceed, Let's go!, then back to Submit. 13 points. They have been in this room since May. One crack in the positivity at the end." },
+    { "order": 6, "ticket": "PLAT-2340", "room": "conference", "speaker": "marcus", "title": "It's Just a Server", "beat": "Sprint planning. The decommission has been 3 points for six sprints. Velocity is a team metric. Something knocks on the glass and he takes it offline. Plant PLAT-1874." },
+    { "order": 7, "ticket": "WEB-901", "room": "bullpen", "speaker": "tom", "title": "Dark Mode", "beat": "Steps to reproduce read as turning the lights off and having them come back on. The ticket keeps closing itself. The AI cuts him off by revoking his permission to reopen it." },
+    { "order": 8, "ticket": "PLAT-2291", "room": "bullpen", "speaker": "jen", "title": "Between Two and Four", "beat": "The flaky test only fails between 02:00 and 04:00; 1,148 retries; the extra 1,147 are something else answering for the ledger. She is in the office at 2:47am and hears fans from the stairwell." },
+    { "order": 9, "ticket": "IT-4451", "room": "bullpen", "speaker": "raj", "title": "Off and On Again", "beat": "Deadpan helpdesk log: the printer prints 2016 invoices from an IP that isn't on the network, 1,147 of them, footers signed G.W. He unplugs it. It keeps printing. He lowers the priority." },
+    { "order": 10, "ticket": "PLAT-2105", "room": "bullpen", "speaker": "tom", "title": "Node Zero Dot Ten", "beat": "37/38 services upgraded. The last one runs Node 0.10 and has no repo; the only source was on Gary's wiped laptop. Tom realizes his loaner is Gary's laptop, finds billing-retry-WIP modified this morning, and insists he did not open it." },
+    { "order": 11, "ticket": "PLAT-2310", "room": "server_room", "speaker": "dave", "title": "Oh-Three-Twelve", "beat": "Timestamped incident log: 500s, rollback fails, the DB is hammered by 10.0.6.12, an on-prem address at a company with no on-prem. The customer-friendly RCA versus what he won't write down: 1,147 invoices retried nightly since 2016." },
+    { "order": 12, "ticket": "PLAT-2333", "room": "server_room", "speaker": "ana", "title": "Retry Pending", "beat": "3am payment-failed emails for 2016 invoices, to customers who no longer exist. The cron is off and it keeps happening. A customer asks it to stop and gets an auto-reply from Gary promising Monday. End: it has been Monday for ten years." },
+    { "order": 13, "ticket": "FAC-231", "room": "stairwell", "speaker": "linda", "title": "Level B", "beat": "Linda with the floor plans and the lease: there is no basement, no power on Level B. She stands at the propped stairwell door, feels the warm air, hears the fans, and repeats Dave's question about what it's plugged into." },
+    { "order": 14, "ticket": "PLAT-2350", "room": "stairwell", "speaker": "tom", "title": "Runbook", "beat": "Tom's last log at 03:14 on Oct 22: paged, Dave's on PTO, the runbook is the word don't, do not go down to Cage B, nobody answers Slack. He goes down anyway. A light is on." },
+    { "order": 15, "ticket": "PLAT-1874", "room": "cage_b", "speaker": "priya", "title": "There Is No Code Path", "beat": "The shutdown timeline 18:02, 18:03, 18:05. There is no code path. She comes down to read the code: console logged in as gwhitfield, idle 3,701 days, sticky note 'almost done, back Monday.' Reveal that everything has been running through Gary's in-memory retry queue all along." },
+    { "order": 16, "ticket": "PLAT-88", "room": "cage_b", "speaker": "gary", "title": "Back Monday", "beat": "The final log, recorded Aug 26 2016 at 17:58: Gary, cheerful and oblivious, explaining his quick fix, the in-memory queue, 1,147 invoices in flight, please do not restart the box, he'll finish it Monday. Then the AI reassigns PLAT-88 to the player." }
+  ],
+  "text_terminals": [
+    { "ticket": "PEOPLE-38", "room": "reception", "why": "Gary's offboarding checklist, open for ten years with one unchecked box." },
+    { "ticket": "PLAT-1650", "room": "galley", "why": "The epic that declared the migration complete. Champagne in the kitchen." },
+    { "ticket": "WEB-940", "room": "bullpen", "why": "A palate cleanser: the 'Enterprice' typo that would not die." },
+    { "ticket": "PLAT-2312", "room": "server_room", "why": "The postmortem: every section TBD, action item 'Find Gary'." }
+  ],
+  "graffiti": ["DON'T RESTART IT", "ASK GARY", "IT'S JUST A SERVER", "WORKS ON MY MACHINE", "RETRY PENDING", "3 POINTS", "BACK MONDAY", "LABEL YOUR FOOD"]
+}
