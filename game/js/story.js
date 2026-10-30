@@ -121,7 +121,7 @@ export class Story {
       this.pending.push({ name, then });
       return;
     }
-    this.audio.sfx("pa_chime", null, { volume: 0.7 });
+    this.audio.sfx("pa_chime", null, { volume: 0.4 });
     this.playing = { kind: "broadcast", name };
     this.after(1.3, async () => {
       this.voice = await this.audio.playVoice([clip], {

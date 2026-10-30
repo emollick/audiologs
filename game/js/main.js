@@ -186,7 +186,7 @@ async function boot() {
       say(parts, { panel = true, chime = false } = {}) {
         const pieces = parts.map(([id, from, to]) => excerpt(id, from, to));
         const log = pieces.find((p) => p.log)?.log ?? null;
-        if (chime) audio.sfx("pa_chime", null, { volume: 0.7 });
+        if (chime) audio.sfx("pa_chime", null, { volume: 0.4 });
         if (panel && log) {
           audio.sfx("log_start", null, { volume: 0.8 });
           hud.showLog(log, manifest.logs.indexOf(log) + 1, manifest.logs.length);

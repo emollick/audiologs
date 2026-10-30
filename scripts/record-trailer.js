@@ -135,7 +135,8 @@ const SHOTS = [
       [6.9, "alert", 1],
       [6.9, "glitch", 0.6],
       [6.9, "stutter", 1.5],
-      [7.5, "say", [["ai-outro", 2.0, 8.03]], { panel: false }],
+      // the outro runs on over the title card, so "...forty-seven invoices in flight" lands on WONTFIX
+      [7.5, "say", [["ai-outro", 2.0, 12.04]], { panel: false }],
       [8.9, "toast", "PLAT-88"],
     ],
   },
@@ -148,7 +149,7 @@ const SHOTS = [
     ],
     at: [
       [0, "fade", 1, 0.45],
-      [0.35, "sfx", "stinger", 0.9],
+      [0.35, "sfx", "stinger", 0.55],
       [
         0.4,
         "caption",
@@ -282,6 +283,8 @@ const VOICE_FX = {
   tape: "highpass=f=120,equalizer=f=2400:t=q:w=1:g=2,lowpass=f=3500,vibrato=f=0.55:d=0.04,acompressor=threshold=0.125:ratio=4:attack=5:release=90,volume=1.45",
 };
 const HISS = { recorder: 0.004, tape: 0.011 };
+// without the game's distance falloff and master compressor, these come out too loud next to the voices
+const SFX_TRIM = { step_metal: 0.55, pa_chime: 0.55 };
 
 async function mixAudio(events, file) {
   const inputs = [];
@@ -310,14 +313,15 @@ async function mixAudio(events, file) {
     const src = MANIFEST.sfx?.[e.name];
     if (!src) continue;
     const i = add(["-i", join(ROOT, "game", src)]);
-    const vol = (e.volume ?? 1) * (e.name === "step_metal" ? 0.55 : 1);
+    const vol = (e.volume ?? 1) * (SFX_TRIM[e.name] ?? 1);
     const label = `s${sfx.length}`;
     chains.push(`[${i}:a]aformat=sample_rates=48000:channel_layouts=stereo,volume=${vol.toFixed(3)},adelay=${ms(e.at)}:all=1[${label}]`);
     sfx.push(`[${label}]`);
   }
 
   // ambience follows the zone changes the game logged; the trailer cuts are covered by a continuous bed
-  const zones = events.filter((e) => e.type === "zone").map((e) => ({ at: Math.max(0, e.at), zone: e.zone }));
+  // the game starts in the station zone without logging it, so seed that before the first logged change
+  const zones = [{ at: 0, zone: "station" }, ...events.filter((e) => e.type === "zone").map((e) => ({ at: Math.max(0, e.at), zone: e.zone }))];
   const ranges = [];
   for (const z of zones) {
     const name = z.zone === "basement" ? "amb_basement" : "amb_station";
@@ -331,7 +335,7 @@ async function mixAudio(events, file) {
     const i = add(["-stream_loop", "-1", "-i", join(ROOT, "game", MANIFEST.sfx[r.name])]);
     const len = r.end - r.start + 1.2;
     const label = `b${beds.length}`;
-    const vol = r.name === "amb_basement" ? 0.85 : 0.6;
+    const vol = r.name === "amb_basement" ? 0.3 : 0.6; // the game plays the basement drone at about 0.28
     chains.push(`[${i}:a]aformat=sample_rates=48000:channel_layouts=stereo,atrim=0:${len.toFixed(2)},asetpts=PTS-STARTPTS,volume=${vol},afade=t=in:d=${r.start ? 1.2 : 0.4},afade=t=out:st=${(len - 1.2).toFixed(2)}:d=1.2,adelay=${ms(Math.max(0, r.start - 0.6))}:all=1[${label}]`);
     beds.push(`[${label}]`);
   }
@@ -339,10 +343,12 @@ async function mixAudio(events, file) {
   const n = (list) => list.length;
   const graph = [
     ...chains,
-    `${voices.join("")}amix=inputs=${n(voices)}:normalize=0:dropout_transition=0,asplit=2[vmix][vkey]`,
+    `${voices.join("")}amix=inputs=${n(voices)}:normalize=0:dropout_transition=0,volume=1.6,asplit=3[vmix][vkey][vkey2]`,
     `${beds.join("")}amix=inputs=${n(beds)}:normalize=0[bmix]`,
-    `[bmix][vkey]sidechaincompress=threshold=0.04:ratio=5:attack=30:release=500[bducked]`,
-    `${sfx.join("")}amix=inputs=${n(sfx)}:normalize=0[smix]`,
+    `[bmix][vkey]sidechaincompress=threshold=0.012:ratio=6:attack=30:release=500[bducked]`,
+    `${sfx.join("")}amix=inputs=${n(sfx)}:normalize=0[sraw]`,
+    // like the game, effects step back while someone is talking
+    `[sraw][vkey2]sidechaincompress=threshold=0.012:ratio=4:attack=20:release=400[smix]`,
     `[vmix][bducked][smix]amix=inputs=3:normalize=0,apad,atrim=0:${TOTAL.toFixed(3)},afade=t=out:st=${(TOTAL - 0.6).toFixed(2)}:d=0.6,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[out]`,
   ].join(";\n");
   const graphFile = join(OUT_DIR, "trailer-mix.ffgraph");
