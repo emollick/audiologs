@@ -45,8 +45,22 @@ export class HUD {
     b.classList.remove("show");
     void b.offsetWidth;
     b.classList.add("show");
+    this.fitBanner();
     const token = (this.bannerToken = {});
     this.later(() => this.bannerToken === token && b.classList.remove("show"), 3.6);
+  }
+
+  /** Slides the room banner right, just far enough to clear the log panel while both are up. */
+  fitBanner() {
+    const b = this.el.banner;
+    const p = this.el.log;
+    const width = b.offsetParent?.clientWidth ?? innerWidth;
+    let shift = 0;
+    if (p.classList.contains("show") && width > 640) {
+      const left = width / 2 - b.offsetWidth / 2;
+      shift = Math.max(0, Math.min(p.offsetLeft + p.offsetWidth + 24 - left, left - 24));
+    }
+    b.style.transform = `translateX(calc(-50% + ${Math.round(shift)}px))`;
   }
 
   prompt(text) {
@@ -66,11 +80,13 @@ export class HUD {
     this.el.log.querySelector(".who").innerHTML = `<span style="color:${ch.color}">${esc(ch.name.toUpperCase())}</span> <span class="dim">· ${esc(ch.role)}</span>`;
     this.el.log.querySelector(".title").innerHTML = `“${esc(log.title)}” <span class="dim">· ${esc(log.recorded)}</span>`;
     this.el.log.classList.add("show");
+    this.fitBanner();
     this.logTotal = log.duration;
   }
 
   hideLog() {
     this.el.log.classList.remove("show");
+    this.fitBanner();
     this.subtitle(null);
   }
 
