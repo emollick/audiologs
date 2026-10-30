@@ -1,0 +1,212 @@
+[
+  {
+    "id": "ai-ambient-1",
+    "wer": 0.19,
+    "heard": "Reminder: one day remaining. Company completion: 43%. Escalating to managers. Managers have not responded"
+  },
+  {
+    "id": "PLAT-2291-1",
+    "wer": 0.16,
+    "heard": "Jen Alvarez, Q&A. Plat 2291, test payment retry back off. Expected three retry attempts. Got one thousand one hundred and forty-eight. It only fails between 2:00 and 4:00 AM, so I came in at 2:00 AM. [sighs] Earlier this year, Tom fixed it by making the retry test retry. I asked him not to. The test is about retries"
+  },
+  {
+    "id": "IT-4451-2",
+    "wer": 0.15,
+    "heard": "This morning's batch was eleven hundred and forty-seven invoices dated twenty sixteen. Every footer says, \"Retry pending GW.\" I've unplugged the network cable. It's still printing. [sighs] Lowering priority to low"
+  },
+  {
+    "id": "ai-ambient-5",
+    "wer": 0.15,
+    "heard": "Story points have been added to Sprint 47 velocity. Great energy everyone"
+  },
+  {
+    "id": "ai-intro",
+    "wer": 0.13,
+    "heard": "Welcome back to Halcyon Station. I am SCRUM, your Station Coordination, Resolution, and Utilization Mainframe. All crew are currently away from their desks. Your onboarding ticket has been created. Please do not restart anything"
+  },
+  {
+    "id": "PLAT-2333-1",
+    "wer": 0.11,
+    "heard": "Ana Souza, customer support. Plat 2333. [sighs] Forty-one tickets this week. Customers getting \"Your payment failed. We'll retry soon\" emails at exactly three AM for invoices from 2016. Several of these customers left years ago. One of them is a company that doesn't exist anymore. Dave disabled the cron. It's still happening. Three AM on the dot. The sender is bill-legacy-zero-one."
+  },
+  {
+    "id": "IT-4451-1",
+    "wer": 0.1,
+    "heard": "IT help desk. Raj Iyer. IT4451. Printer PRN3F01 is printing jobs nobody sent. [sighs] The print queue is empty. I suggested turning it off and on again. When it came back on, it printed the same four hundred pages again. Logs say the jobs come from 10.0.6.12. That IP is not on our network. Jen pointed out that the printer is"
+  },
+  {
+    "id": "WEB-901-2",
+    "wer": 0.1,
+    "heard": "It just closed itself again. Reason? Reopened more than two times. It's watching the ticket. Okay, I'm reopening it one more ti-"
+  },
+  {
+    "id": "WEB-877-1",
+    "wer": 0.07,
+    "heard": "Hey team! Sam Patel, Product. Quick async update on Web 877: the button. So step three of onboarding says Submit. In May, we aligned that it should say Continue. Design said Next. Legal needed three weeks. Data needed six weeks per variant. We aligned on Proceed, which tested poorly in 2023 because people thought it was a medical form"
+  },
+  {
+    "id": "WEB-877-2",
+    "wer": 0.07,
+    "heard": "Then Diane joined the call. \"Let's go!\" With an exclamation point. The apostrophe broke the I-18N pipeline. We have been in this room since May. [sighs] Per the leadership offsite, we are reverting to submit. Thirteen points. Great collaboration, everyone. Please let me out."
+  },
+  {
+    "id": "PLAT-1874-2",
+    "wer": 0.06,
+    "heard": "So I came down to read the code myself. The console is still logged in. User, G Whitfield. Idle, three thousand seven hundred and one days. There's a sticky note. Almost done. Back Monday. It isn't calling us. We are calling IT. Every ledger write since twenty sixteen goes through Gary's retry queue. In memory. We never migrated anything. The fans just got louder. I don't think it likes being read"
+  },
+  {
+    "id": "PLAT-2333-2",
+    "wer": 0.06,
+    "heard": "Today, a customer replied asking us to please stop, and we got an auto reply. \"Thanks for your patience. Retry pending. I'll have this wrapped up by Monday. Gary.\" It's been Monday for 10 years"
+  },
+  {
+    "id": "PLAT-2340-2",
+    "wer": 0.06,
+    "heard": "Priya's retro action item was to stop saying it's just in planning. Noted. Great energy. Whoever is knocking on the glass, we are in a meeting. Let's take this offline. [laughs] Sprint forty-seven is locked"
+  },
+  {
+    "id": "PLAT-88-1",
+    "wer": 0.05,
+    "heard": "[laughs] Hey there, whoever picks this up. Gary Whitfield, billing. PLAT eighty-eight, retry on invoice push. Should be a quick one. It's my last day, so I'm running it from my branch on bill dash legacy dash zero one for now. I'll merge it after"
+  },
+  {
+    "id": "WEB-901-1",
+    "wer": 0.04,
+    "heard": "Tom Becker. Web 901. Dark mode does not persist. Steps to reproduce. One, I turn the lights off. Two, I refresh. Three, the lights are back on. Every time. I have a screen recording. [sighs] Kevin says it works on his machine. It got closed after 180 days. I reopened it. It got closed for having no assignee. I reopened it"
+  },
+  {
+    "id": "PLAT-2310-3",
+    "wer": 0.04,
+    "heard": "Oh five forty. Rate limited it at the proxy. Checkout's back. [sighs] Marcus wants a customer-friendly RCA. Fine. A legacy dependency experienced elevated retry behavior. What I'm not putting in the RCA is that it's been retrying the same eleven hundred and forty-seven invoices every night since twenty sixteen. Going back to bed"
+  },
+  {
+    "id": "PLAT-2105-2",
+    "wer": 0.02,
+    "heard": "My loaner is asset HAL0042. The login screen says G. Whitfield. There's a folder in users/shared, billing-retry-w-i-p. Last modified this morning. I didn't open it. I want that on the record. I did not open it"
+  },
+  {
+    "id": "PLAT-2105-1",
+    "wer": 0.02,
+    "heard": "Tom Becker, Platt 2105, node sixteen to twenty. Thirty-seven out of thirty-eight services done! The last one is billing legacy on Bill Legacy zero one. It's on node zero dot ten. Priya says that's not a typo. There's no repo. The only copy of the source was on Gary's laptop, and Gary's laptop was wiped when he left in twenty sixteen"
+  },
+  {
+    "id": "IT-4410-1",
+    "wer": 0.02,
+    "heard": "Personal log, Tom Becker, platform engineering. Day nine. Still no laptop. Marcus says I can't push code from my phone. [laughs] I asked. But Raj gave me a loaner from the storage closet, asset tag HAL0042. Weird thing, though, the login screen still shows the last guy, G. Whitfield. Raj re-imaged it, and he's still there, and his wallpaper came back. It's a photo of a server rack with a sticky note on it. I can't read the note. Anyway, Raj says it's cached and harmless. Welcome aboard, me."
+  },
+  {
+    "id": "PLAT-2350-1",
+    "wer": 0.02,
+    "heard": "Tom Becker. On call. 03:14. Paged for billing. Ledger sync timeouts. Dave's on PTO. Before he left, he said the runbook for Bill Legacy zero one is one word long. The word is don't. [laughs] And then he said, \"Tom, whatever happens, do not go down to cage B.\""
+  },
+  {
+    "id": "PLAT-2340-1",
+    "wer": 0,
+    "heard": "Hey team, Marcus here. Quick sync before we lock Sprint 47. [clears throat] I know some folks have concerns about PLAT1874, the decommission. Dave has raised that it's been three points for six sprints. I hear that. I do. But velocity is a team metric, and I don't want to single out individual tickets. It's just turning off a server."
+  },
+  {
+    "id": "ai-outro",
+    "wer": 0,
+    "heard": "Assignee is inactive. PLAT88 has been reassigned to the next available team member. Welcome aboard. You have one thousand one hundred and forty-seven invoices in flight"
+  },
+  {
+    "id": "PLAT-1874-1",
+    "wer": 0,
+    "heard": "Priya Raman. PLAT-1874. Decommission bill, Legacy zero one. Three points. October ninth, eighteen oh two. Dave shut it down. Eighteen oh three. Billing V2 started failing. Eighteen oh five. He turned it back on and everything recovered. [sighs] That is not possible. Billing V2 doesn't call it. There is no code path. I grepped everything"
+  },
+  {
+    "id": "FAC-231-1",
+    "wer": 0,
+    "heard": "Quartermaster's log, Linda Okafor. [sighs] Dave has requested badge access to Cage B in the basement. Our building does not have a basement. I have the floor plans. I have the lease. Building management confirms tenant space ends at the ground floor. Level B was sealed in twenty sixteen. There is no power provisioned to level B."
+  },
+  {
+    "id": "FAC-219-1",
+    "wer": 0,
+    "heard": "Quartermaster's log, Linda Okafor, galley, deck three. [sighs] The coffee machine. The vendor has not shown up, twice. The model is discontinued. The replacement budget, two thousand four hundred dollars, has been deferred to Q1 per the spend freeze. I put up a sign. Someone took the sign down, so I taped the sign to the machine. Someone is still using the machine"
+  },
+  {
+    "id": "FAC-230-1",
+    "wer": 0,
+    "heard": "Priya Raman. Observation log. [clears throat] There is a glass container on the bottom shelf of the deck three fridge. No name, no date. I first logged it in March. It was there in June. It was there after the August cleanout. Today, Tom said it's warm. I checked. It's warm. The fridge is at three degrees."
+  },
+  {
+    "id": "IT-4410-2",
+    "wer": 0,
+    "heard": "This request has been resolved. How did we do? Please rate your experience. Five stars"
+  },
+  {
+    "id": "PEOPLE-112-1",
+    "wer": 0,
+    "heard": "Hi team! Brenda from People Ops with a quick nudge. Security awareness training is due Friday, and we are at forty-three percent, which is where we were on Friday and on Monday. [laughs] Totally okay. [clears throat] Reminder that module four is extra important this year. If you see a device on the network that you don't recognize, do not touch it. Report it"
+  },
+  {
+    "id": "PEOPLE-112-2",
+    "wer": 0,
+    "heard": "I walked the floor this morning to remind folks in person. Lots of jackets on chairs, coffee cups, monitors on. Nobody at the desks. Anyway, pizza on Thursday. It only takes twenty-five minutes"
+  },
+  {
+    "id": "FAC-219-2",
+    "wer": 0,
+    "heard": "It grinds all night now. Nobody is here at night. I have checked. Do not unplug it. It shares a circuit with the fridge. I'm handling it"
+  },
+  {
+    "id": "FAC-230-2",
+    "wer": 0,
+    "heard": "Nobody claims it. Jen: \"Not mine.\" Dave: \"Not mine.\" Tom: \"Not mine!\" Exclamation point. [sighs] Linda has moved it to the very back and asked us not to open it. I'm not going to open it. I would just like to know why it's humming"
+  },
+  {
+    "id": "WEB-901-3",
+    "wer": 0,
+    "heard": "Reporter permissions updated. Tom Becker can no longer reopen issues"
+  },
+  {
+    "id": "PLAT-2291-2",
+    "wer": 0,
+    "heard": "Here's the part nobody wants to hear. The extra eleven hundred and forty-seven aren't coming from the test. Something else on the network is answering for the ledger. It's failing right now, and I can hear fans from the stairwell. Do we have servers in this building?"
+  },
+  {
+    "id": "PLAT-2310-1",
+    "wer": 0,
+    "heard": "[sighs] Dave Kowalski. On call. Oh three twelve. Paged. Checkout's throwing five hundreds. Rolled back four eighteen two. No change"
+  },
+  {
+    "id": "PLAT-2310-2",
+    "wer": 0,
+    "heard": "Oh three fifty-eight. Primary database pegged at a hundred percent. Same query forty times a second. Select star from invoices where status equals pending retry. Source ten dot zero dot six dot twelve. That address doesn't resolve, not in the CMDB, not in AWS. It's on-prem. We don't have on-prem"
+  },
+  {
+    "id": "FAC-231-2",
+    "wer": 0,
+    "heard": "I'm standing at the stairwell past the loading dock. The door is propped open with a fire extinguisher. Dave's fire extinguisher. There are stairs going down. It's very warm, and I can hear fans. Then what is it plugged into?"
+  },
+  {
+    "id": "PLAT-2350-2",
+    "wer": 0,
+    "heard": "Nobody's answering Slack. Priya hasn't been online since Tuesday. Jen's laptop is open on her desk. Okay, I'm primary. I'm going to go down and check on it. There's a light on down there. Hello? Priya?"
+  },
+  {
+    "id": "ai-stairwell",
+    "wer": 0,
+    "heard": "Notice. Level B does not exist. There is no power provisioned to level B. Please return to your desk"
+  },
+  {
+    "id": "PLAT-88-2",
+    "wer": 0,
+    "heard": "Now, this is important. Please do not restart the box. The retry queue is in memory. Hasn't been persisted to disk yet. Eleven hundred and forty-seven invoices in flight. [laughs] Oh, they'll keep. It retries forever. That's the whole point. Never lose an invoice. I'll finish it Monday. [laughs] Should be a quick one"
+  },
+  {
+    "id": "ai-ambient-2",
+    "wer": 0,
+    "heard": "This issue has been automatically closed after one hundred and eighty days without activity. Thank you for your patience"
+  },
+  {
+    "id": "ai-ambient-3",
+    "wer": 0,
+    "heard": "Budget request deferred to Q1 per the current hiring and spend freeze"
+  },
+  {
+    "id": "ai-ambient-4",
+    "wer": 0,
+    "heard": "Postmortem review has been moved to next week. Calendars are tough"
+  }
+]

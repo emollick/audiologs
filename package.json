@@ -1,0 +1,27 @@
+{
+  "name": "audiologs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WONTFIX: turn JIRA tickets into found-audio logs from an abandoned station, then walk through it in a browser horror game.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "write": "node src/cli.js write",
+    "cast": "node src/cli.js cast",
+    "voice": "node src/cli.js voice",
+    "sfx": "node src/cli.js sfx",
+    "qa": "node src/cli.js qa",
+    "build": "node src/cli.js build",
+    "all": "node src/cli.js all",
+    "dev": "node scripts/serve.js",
+    "vendor": "node scripts/vendor.js",
+    "trailer": "node scripts/record-trailer.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.134.0"
+  },
+  "devDependencies": {
+    "three": "0.186.1"
+  }
+}

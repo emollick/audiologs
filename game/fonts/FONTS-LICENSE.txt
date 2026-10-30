@@ -1,0 +1,4 @@
+Fonts are from Google Fonts and licensed under the SIL Open Font License 1.1:
+- Bebas Neue (Dharma Type)
+- Share Tech Mono (Carrois Apostrophe)
+- Permanent Marker (Font Diner)

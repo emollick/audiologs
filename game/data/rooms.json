@@ -1,0 +1,10 @@
+[
+  { "id": "airlock", "capacity": 0, "description": "Docking airlock where the player arrives. The station AI greets them here. No crew logs." },
+  { "id": "reception", "capacity": 2, "description": "Front desk, security station and HR noticeboard. The first room the player explores, so its logs should be relatable and funny." },
+  { "id": "galley", "capacity": 2, "description": "Kitchen and break room: coffee machine, fridge, tables, an old celebration banner." },
+  { "id": "conference", "capacity": 2, "description": "Glass-walled meeting room with a whiteboard and a projector: planning, product decisions, meetings that never end." },
+  { "id": "bullpen", "capacity": 4, "description": "Open-plan engineering floor: desks, monitors, jackets on chairs, a printer. Bugs, tests, upgrades, everyday engineering." },
+  { "id": "server_room", "capacity": 2, "description": "Ops room: a wall of dashboards, the on-call desk, a cot. Incidents, outages, alerts, support escalations." },
+  { "id": "stairwell", "capacity": 2, "description": "Past the loading dock, a stairwell down to a level that should not exist. Warnings, and the last recordings before someone went down." },
+  { "id": "cage_b", "capacity": 2, "description": "The basement room where the thing at the heart of the story lives. The reveal goes here, and the final log of the game is the last log in this room." }
+]

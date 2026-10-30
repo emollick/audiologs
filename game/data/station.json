@@ -1,0 +1,2573 @@
+{
+  "title": "WONTFIX",
+  "generated": "2026-10-30T00:45:24.148Z",
+  "station": {
+    "name": "HALCYON STATION",
+    "full_name": "Halcyon Systems Orbital Platform, Deck 3",
+    "operator": "Halcyon Systems",
+    "tagline": "Some tickets never close.",
+    "premise": "Halcyon is a mid-sized software company whose entire billing system has secretly been running for ten years on one forgotten server, bill-legacy-01, executing a half-finished retry branch its author left in memory on his last day in 2016. In October 2026 the crew tried to decommission it. It did not want to be decommissioned, and one by one the people investigating it went down to Level B and stopped answering Slack."
+  },
+  "ai": {
+    "id": "station_ai",
+    "name": "S.C.R.U.M.",
+    "expansion": "Station Coordination, Resolution and Utilization Mainframe"
+  },
+  "characters": {
+    "tom": {
+      "name": "Tom Becker",
+      "role": "Junior Systems Engineer (new crew)",
+      "realRole": "Software Engineer, Platform (new hire)",
+      "color": "#f2c14e"
+    },
+    "brenda": {
+      "name": "Brenda Holt",
+      "role": "Crew Welfare Officer",
+      "realRole": "People Ops",
+      "color": "#7ec8e3"
+    },
+    "linda": {
+      "name": "Linda Okafor",
+      "role": "Quartermaster, Galley and Facilities",
+      "realRole": "Facilities / Office Manager",
+      "color": "#f78154"
+    },
+    "priya": {
+      "name": "Priya Raman",
+      "role": "Senior Systems Engineer",
+      "realRole": "Senior Backend Engineer",
+      "color": "#b4e07a"
+    },
+    "sam": {
+      "name": "Sam Patel",
+      "role": "Product Officer",
+      "realRole": "Product Manager",
+      "color": "#e59cf2"
+    },
+    "marcus": {
+      "name": "Marcus Chen",
+      "role": "Engineering Commander",
+      "realRole": "Engineering Manager",
+      "color": "#ff6b6b"
+    },
+    "jen": {
+      "name": "Jen Alvarez",
+      "role": "Quality Assurance, Night Shift",
+      "realRole": "QA Engineer",
+      "color": "#9be3c3"
+    },
+    "raj": {
+      "name": "Raj Iyer",
+      "role": "Comms and Hardware Support",
+      "realRole": "IT Helpdesk",
+      "color": "#f5a3a3"
+    },
+    "dave": {
+      "name": "Dave Kowalski",
+      "role": "Reactor Watch Engineer (on-call)",
+      "realRole": "SRE / DevOps",
+      "color": "#c9b6ff"
+    },
+    "ana": {
+      "name": "Ana Souza",
+      "role": "Customer Relations",
+      "realRole": "Customer Support Lead",
+      "color": "#ffd8a8"
+    },
+    "gary": {
+      "name": "Gary Whitfield",
+      "role": "Principal Engineer (former crew)",
+      "realRole": "Principal Engineer, left Aug 2016",
+      "color": "#a3d5ff"
+    },
+    "station_ai": {
+      "name": "S.C.R.U.M.",
+      "role": "Station AI",
+      "realRole": "Automation for Jira, PagerDuty, Finance Approvals and the auto-close rules",
+      "color": "#8fe9ff"
+    }
+  },
+  "rooms": [
+    {
+      "id": "airlock",
+      "capacity": 0,
+      "description": "Docking airlock where the player arrives. The station AI greets them here. No crew logs.",
+      "display_name": "DOCKING AIRLOCK",
+      "flavor": "The outer door cycles for you without being asked."
+    },
+    {
+      "id": "reception",
+      "capacity": 2,
+      "description": "Front desk, security station and HR noticeboard. The first room the player explores, so its logs should be relatable and funny.",
+      "display_name": "DECK 3 / RECEPTION",
+      "flavor": "A security desk, a visitor log that stops on Oct 21, and a training poster that still says 43%."
+    },
+    {
+      "id": "galley",
+      "capacity": 2,
+      "description": "Kitchen and break room: coffee machine, fridge, tables, an old celebration banner.",
+      "display_name": "DECK 3 / GALLEY",
+      "flavor": "The coffee machine grinds in the dark. The fridge light flickers. An OUT OF ORDER sign is taped to the machine."
+    },
+    {
+      "id": "conference",
+      "capacity": 2,
+      "description": "Glass-walled meeting room with a whiteboard and a projector: planning, product decisions, meetings that never end.",
+      "display_name": "ALIGNMENT ROOM",
+      "flavor": "A whiteboard covered in the words Submit, Continue, Next, Proceed and Let's go!, all crossed out but one."
+    },
+    {
+      "id": "bullpen",
+      "capacity": 4,
+      "description": "Open-plan engineering floor: desks, monitors, jackets on chairs, a printer. Bugs, tests, upgrades, everyday engineering.",
+      "display_name": "DECK 3 / PLATFORM ENGINEERING",
+      "flavor": "Open-plan desks, jackets on chairs, monitors still lit with Jira boards, and a printer that will not stop."
+    },
+    {
+      "id": "server_room",
+      "capacity": 2,
+      "description": "Ops room: a wall of dashboards, the on-call desk, a cot. Incidents, outages, alerts, support escalations.",
+      "display_name": "OPS / REACTOR WATCH",
+      "flavor": "The NOC: dashboards frozen red at 03:12, an on-call phone face down, a cot."
+    },
+    {
+      "id": "stairwell",
+      "capacity": 2,
+      "description": "Past the loading dock, a stairwell down to a level that should not exist. Warnings, and the last recordings before someone went down.",
+      "display_name": "STAIRWELL B (NOT ON PLAN)",
+      "flavor": "Past the loading dock, a door propped open with a fire extinguisher. The air coming up is warm."
+    },
+    {
+      "id": "cage_b",
+      "capacity": 2,
+      "description": "The basement room where the thing at the heart of the story lives. The reveal goes here, and the final log of the game is the last log in this room.",
+      "display_name": "LEVEL B / CAGE B",
+      "flavor": "A single beige server tower, fans screaming, a CRT console still logged in, and a sticky note."
+    }
+  ],
+  "logs": [
+    {
+      "order": 1,
+      "ticket": "IT-4410",
+      "room": "reception",
+      "speaker": "tom",
+      "title": "Day Nine",
+      "recorded": "MAR 19 2026 / 09:30",
+      "info": {
+        "key": "IT-4410",
+        "summary": "Onboarding: laptop + access for Tom Becker (start date Mon Mar 9)",
+        "type": "Service Request",
+        "status": "Resolved",
+        "resolution": "Done",
+        "priority": "Medium",
+        "assignee": "Raj Iyer",
+        "reporter": "Marcus Chen",
+        "created": "2026-02-23T10:02:11.000-0500",
+        "updated": "2026-03-20T16:40:09.000-0400",
+        "storyPoints": null,
+        "comments": 9
+      },
+      "clips": [
+        {
+          "id": "IT-4410-1",
+          "src": "audio/logs/IT-4410-1.mp3",
+          "speaker": "tom",
+          "fx": "recorder",
+          "duration": 34.273,
+          "cues": [
+            {
+              "t0": 0.08,
+              "t1": 3.07,
+              "text": "Personal log, Tom Becker, Platform Engineering!"
+            },
+            {
+              "t0": 3.12,
+              "t1": 5.71,
+              "text": "Day nine. Still no laptop."
+            },
+            {
+              "t0": 5.76,
+              "t1": 8.47,
+              "text": "Marcus says I can't push code from my phone."
+            },
+            {
+              "t0": 8.52,
+              "t1": 12.59,
+              "text": "I asked. But! Raj gave me a loaner from the storage closet."
+            },
+            {
+              "t0": 12.64,
+              "t1": 16.03,
+              "text": "Asset tag HAL zero zero four two."
+            },
+            {
+              "t0": 16.08,
+              "t1": 17.23,
+              "text": "Weird thing, though."
+            },
+            {
+              "t0": 17.28,
+              "t1": 19.71,
+              "text": "The login screen still shows the last guy."
+            },
+            {
+              "t0": 19.76,
+              "t1": 22.43,
+              "text": "G. Whitfield. Raj reimaged it..."
+            },
+            {
+              "t0": 22.48,
+              "t1": 23.79,
+              "text": "and he's still there."
+            },
+            {
+              "t0": 23.84,
+              "t1": 25.63,
+              "text": "And his wallpaper came back."
+            },
+            {
+              "t0": 25.68,
+              "t1": 28.75,
+              "text": "It's a photo of a server rack, with a sticky note on it."
+            },
+            {
+              "t0": 28.8,
+              "t1": 30.11,
+              "text": "I can't read the note."
+            },
+            {
+              "t0": 30.16,
+              "t1": 33.07,
+              "text": "Anyway! Raj says it's cached, and harmless."
+            },
+            {
+              "t0": 33.12,
+              "t1": 34.92,
+              "text": "Welcome aboard, me!"
+            }
+          ]
+        },
+        {
+          "id": "IT-4410-2",
+          "src": "audio/logs/IT-4410-2.mp3",
+          "speaker": "station_ai",
+          "fx": "pa",
+          "duration": 6.034,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 1.95,
+              "text": "This request has been resolved."
+            },
+            {
+              "t0": 2,
+              "t1": 5.03,
+              "text": "How did we do? Please rate your experience..."
+            },
+            {
+              "t0": 5.08,
+              "t1": 6.68,
+              "text": "five stars."
+            }
+          ]
+        }
+      ],
+      "duration": 41.01
+    },
+    {
+      "order": 2,
+      "ticket": "PEOPLE-112",
+      "room": "reception",
+      "speaker": "brenda",
+      "title": "Module Four",
+      "recorded": "OCT 23 2026 / 09:04",
+      "info": {
+        "key": "PEOPLE-112",
+        "summary": "Mandatory: complete Q4 Security Awareness Training by Fri Oct 30",
+        "type": "Task",
+        "status": "In Progress",
+        "resolution": null,
+        "priority": "High",
+        "assignee": "Brenda Holt",
+        "reporter": "Brenda Holt",
+        "created": "2026-10-01T09:00:00.000-0400",
+        "updated": "2026-10-29T09:00:02.000-0400",
+        "storyPoints": null,
+        "comments": 7
+      },
+      "clips": [
+        {
+          "id": "PEOPLE-112-1",
+          "src": "audio/logs/PEOPLE-112-1.mp3",
+          "speaker": "brenda",
+          "fx": "recorder",
+          "duration": 24.999,
+          "cues": [
+            {
+              "t0": 0.08,
+              "t1": 3.63,
+              "text": "Hi team! Brenda from People Ops, with a quick nudge!"
+            },
+            {
+              "t0": 3.68,
+              "t1": 7.15,
+              "text": "Security Awareness Training is due Friday, and we are at..."
+            },
+            {
+              "t0": 7.2,
+              "t1": 8.91,
+              "text": "forty-three percent!"
+            },
+            {
+              "t0": 8.96,
+              "t1": 10.92,
+              "text": "Which is where we were on Friday."
+            },
+            {
+              "t0": 10.96,
+              "t1": 15.07,
+              "text": "And on Monday. Totally okay!"
+            },
+            {
+              "t0": 15.12,
+              "t1": 18.67,
+              "text": "Reminder that Module Four is extra important this year."
+            },
+            {
+              "t0": 18.72,
+              "t1": 22.23,
+              "text": "If you see a device on the network that you don't recognize..."
+            },
+            {
+              "t0": 22.28,
+              "t1": 25.56,
+              "text": "do not touch it. Report it."
+            }
+          ]
+        },
+        {
+          "id": "PEOPLE-112-2",
+          "src": "audio/logs/PEOPLE-112-2.mp3",
+          "speaker": "brenda",
+          "fx": "recorder",
+          "duration": 14.602,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 3.4,
+              "text": "I walked the floor this morning to remind folks in person!"
+            },
+            {
+              "t0": 3.44,
+              "t1": 5.443,
+              "text": "Lots of jackets on chairs."
+            },
+            {
+              "t0": 5.493,
+              "t1": 7.91,
+              "text": "Coffee cups. Monitors on."
+            },
+            {
+              "t0": 7.96,
+              "t1": 9.95,
+              "text": "Nobody at the desks."
+            },
+            {
+              "t0": 10,
+              "t1": 12.44,
+              "text": "Anyway! Pizza on Thursday!"
+            },
+            {
+              "t0": 12.48,
+              "t1": 15.24,
+              "text": "It only takes twenty-five minutes!"
+            }
+          ]
+        }
+      ],
+      "duration": 40.3
+    },
+    {
+      "order": 3,
+      "ticket": "FAC-219",
+      "room": "galley",
+      "speaker": "linda",
+      "title": "Do Not Use the Machine",
+      "recorded": "OCT 20 2026 / 07:55",
+      "info": {
+        "key": "FAC-219",
+        "summary": "3rd floor kitchen coffee machine making grinding noise and leaking",
+        "type": "Facilities Request",
+        "status": "Blocked",
+        "resolution": null,
+        "priority": "Medium",
+        "assignee": "Linda Okafor",
+        "reporter": "Jen Alvarez",
+        "created": "2026-08-31T08:12:40.000-0400",
+        "updated": "2026-10-20T07:55:03.000-0400",
+        "storyPoints": null,
+        "comments": 8
+      },
+      "clips": [
+        {
+          "id": "FAC-219-1",
+          "src": "audio/logs/FAC-219-1.mp3",
+          "speaker": "linda",
+          "fx": "recorder",
+          "duration": 28.447,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 1.55,
+              "text": "Quartermaster's log."
+            },
+            {
+              "t0": 1.6,
+              "t1": 5.63,
+              "text": "Linda Okafor. Galley, Deck 3."
+            },
+            {
+              "t0": 5.68,
+              "t1": 7.39,
+              "text": "The coffee machine."
+            },
+            {
+              "t0": 7.44,
+              "t1": 9.47,
+              "text": "The vendor has not shown up."
+            },
+            {
+              "t0": 9.52,
+              "t1": 12.91,
+              "text": "Twice. The model is discontinued."
+            },
+            {
+              "t0": 12.96,
+              "t1": 16.4,
+              "text": "The replacement budget, two thousand four hundred dollars, has"
+            },
+            {
+              "t0": 16.44,
+              "t1": 20.247,
+              "text": "been deferred to Q1, per the spend freeze."
+            },
+            {
+              "t0": 20.297,
+              "t1": 23.71,
+              "text": "I put up a sign. Someone took the sign down."
+            },
+            {
+              "t0": 23.76,
+              "t1": 26.27,
+              "text": "So I taped the sign TO the machine."
+            },
+            {
+              "t0": 26.32,
+              "t1": 29.08,
+              "text": "Someone is still using the machine."
+            }
+          ]
+        },
+        {
+          "id": "FAC-219-2",
+          "src": "audio/logs/FAC-219-2.mp3",
+          "speaker": "linda",
+          "fx": "recorder",
+          "duration": 11.468,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 2.27,
+              "text": "It grinds all night now."
+            },
+            {
+              "t0": 2.32,
+              "t1": 4.03,
+              "text": "Nobody is here at night."
+            },
+            {
+              "t0": 4.08,
+              "t1": 7.48,
+              "text": "I have checked. Do NOT unplug it."
+            },
+            {
+              "t0": 7.52,
+              "t1": 10.03,
+              "text": "It shares a circuit with the fridge."
+            },
+            {
+              "t0": 10.08,
+              "t1": 12.12,
+              "text": "I'm handling it."
+            }
+          ]
+        }
+      ],
+      "duration": 40.62
+    },
+    {
+      "order": 4,
+      "ticket": "FAC-230",
+      "room": "galley",
+      "speaker": "priya",
+      "title": "Bottom Shelf",
+      "recorded": "OCT 13 2026 / 12:31",
+      "info": {
+        "key": "FAC-230",
+        "summary": "Kitchen fridge cleanout this Friday 4pm - LABEL YOUR FOOD",
+        "type": "Task",
+        "status": "Done",
+        "resolution": "Done",
+        "priority": "Low",
+        "assignee": "Linda Okafor",
+        "reporter": "Linda Okafor",
+        "created": "2026-10-12T09:00:00.000-0400",
+        "updated": "2026-10-16T17:31:44.000-0400",
+        "storyPoints": null,
+        "comments": 7
+      },
+      "clips": [
+        {
+          "id": "FAC-230-1",
+          "src": "audio/logs/FAC-230-1.mp3",
+          "speaker": "priya",
+          "fx": "recorder",
+          "duration": 25.731,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 4.19,
+              "text": "Priya Raman. Observation log."
+            },
+            {
+              "t0": 4.24,
+              "t1": 7.87,
+              "text": "There is a glass container on the bottom shelf of the Deck 3"
+            },
+            {
+              "t0": 7.92,
+              "t1": 11.07,
+              "text": "fridge. No name. No date."
+            },
+            {
+              "t0": 11.12,
+              "t1": 13.23,
+              "text": "I first logged it in March."
+            },
+            {
+              "t0": 13.28,
+              "t1": 15.23,
+              "text": "It was there in June."
+            },
+            {
+              "t0": 15.28,
+              "t1": 19.184,
+              "text": "It was there after the August cleanout."
+            },
+            {
+              "t0": 19.234,
+              "t1": 21.08,
+              "text": "Today, Tom said it's warm."
+            },
+            {
+              "t0": 21.12,
+              "t1": 23.4,
+              "text": "I checked. It's warm."
+            },
+            {
+              "t0": 23.44,
+              "t1": 26.36,
+              "text": "The fridge is at three degrees."
+            }
+          ]
+        },
+        {
+          "id": "FAC-230-2",
+          "src": "audio/logs/FAC-230-2.mp3",
+          "speaker": "priya",
+          "fx": "recorder",
+          "duration": 20.428,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 3.79,
+              "text": "Nobody claims it. Jen: not mine."
+            },
+            {
+              "t0": 3.84,
+              "t1": 10.67,
+              "text": "Dave: not mine. Tom: not mine, exclamation point."
+            },
+            {
+              "t0": 10.72,
+              "t1": 15.31,
+              "text": "Linda has moved it to the very back and asked us not to open it."
+            },
+            {
+              "t0": 15.36,
+              "t1": 17.55,
+              "text": "I'm not going to open it."
+            },
+            {
+              "t0": 17.6,
+              "t1": 21.08,
+              "text": "I would just like to know why it's humming."
+            }
+          ]
+        }
+      ],
+      "duration": 46.86
+    },
+    {
+      "order": 5,
+      "ticket": "WEB-877",
+      "room": "conference",
+      "speaker": "sam",
+      "title": "Alignment",
+      "recorded": "AUG 14 2026 / 15:58",
+      "info": {
+        "key": "WEB-877",
+        "summary": "Change 'Submit' button label to 'Continue' on onboarding step 3",
+        "type": "Story",
+        "status": "Done",
+        "resolution": "Done",
+        "priority": "High",
+        "assignee": "Kevin Marsh",
+        "reporter": "Sam Patel",
+        "created": "2026-05-04T10:15:00.000-0400",
+        "updated": "2026-08-14T16:02:37.000-0400",
+        "storyPoints": 13,
+        "comments": 12
+      },
+      "clips": [
+        {
+          "id": "WEB-877-1",
+          "src": "audio/logs/WEB-877-1.mp3",
+          "speaker": "sam",
+          "fx": "recorder",
+          "duration": 25.809,
+          "cues": [
+            {
+              "t0": 0.08,
+              "t1": 2.51,
+              "text": "Hey team! Sam Patel, Product."
+            },
+            {
+              "t0": 2.56,
+              "t1": 5.39,
+              "text": "Quick async update on WEB-877."
+            },
+            {
+              "t0": 5.44,
+              "t1": 10.43,
+              "text": "The button. So. Step three of onboarding says 'Submit'."
+            },
+            {
+              "t0": 10.48,
+              "t1": 13.63,
+              "text": "In May, we aligned that it should say 'Continue'."
+            },
+            {
+              "t0": 13.68,
+              "t1": 15.15,
+              "text": "Design said 'Next'."
+            },
+            {
+              "t0": 15.2,
+              "t1": 17.07,
+              "text": "Legal needed three weeks."
+            },
+            {
+              "t0": 17.12,
+              "t1": 19.44,
+              "text": "Data needed six weeks per variant."
+            },
+            {
+              "t0": 19.48,
+              "t1": 21.363,
+              "text": "We aligned on 'Proceed'..."
+            },
+            {
+              "t0": 21.413,
+              "t1": 24.777,
+              "text": "which tested poorly in 2023, because people thought it was a"
+            },
+            {
+              "t0": 24.827,
+              "t1": 26.36,
+              "text": "medical form."
+            }
+          ]
+        },
+        {
+          "id": "WEB-877-2",
+          "src": "audio/logs/WEB-877-2.mp3",
+          "speaker": "sam",
+          "fx": "recorder",
+          "duration": 20.689,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 1.79,
+              "text": "Then Diane joined the call."
+            },
+            {
+              "t0": 1.84,
+              "t1": 4.91,
+              "text": "'Let's go!' With an exclamation point!"
+            },
+            {
+              "t0": 4.96,
+              "t1": 8.59,
+              "text": "The apostrophe broke the i18n pipeline."
+            },
+            {
+              "t0": 8.64,
+              "t1": 12.23,
+              "text": "We have been in this room since May."
+            },
+            {
+              "t0": 12.28,
+              "t1": 15.92,
+              "text": "Per the leadership offsite, we are reverting to 'Submit'."
+            },
+            {
+              "t0": 15.96,
+              "t1": 19.07,
+              "text": "Thirteen points. Great collaboration, everyone."
+            },
+            {
+              "t0": 19.12,
+              "t1": 21.24,
+              "text": "Please let me out."
+            }
+          ]
+        }
+      ],
+      "duration": 47.2
+    },
+    {
+      "order": 6,
+      "ticket": "PLAT-2340",
+      "room": "conference",
+      "speaker": "marcus",
+      "title": "It's Just a Server",
+      "recorded": "OCT 13 2026 / 10:12",
+      "info": {
+        "key": "PLAT-2340",
+        "summary": "Sprint 47 planning: estimates for Platform Modernization epic",
+        "type": "Task",
+        "status": "In Progress",
+        "resolution": null,
+        "priority": "Medium",
+        "assignee": "Marcus Chen",
+        "reporter": "Marcus Chen",
+        "created": "2026-10-05T09:00:00.000-0400",
+        "updated": "2026-10-13T10:12:44.000-0400",
+        "storyPoints": null,
+        "comments": 6
+      },
+      "clips": [
+        {
+          "id": "PLAT-2340-1",
+          "src": "audio/logs/PLAT-2340-1.mp3",
+          "speaker": "marcus",
+          "fx": "recorder",
+          "duration": 23.719,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 1.87,
+              "text": "Hey team, Marcus here."
+            },
+            {
+              "t0": 1.92,
+              "t1": 5.23,
+              "text": "Quick sync before we lock Sprint forty-seven."
+            },
+            {
+              "t0": 5.28,
+              "t1": 9.55,
+              "text": "I know some folks have concerns about PLAT-1874."
+            },
+            {
+              "t0": 9.6,
+              "t1": 12.99,
+              "text": "The decommission. Dave has raised that it's been three points"
+            },
+            {
+              "t0": 13.04,
+              "t1": 15.36,
+              "text": "for six sprints. I hear that."
+            },
+            {
+              "t0": 15.4,
+              "t1": 20.03,
+              "text": "I do. But velocity is a team metric, and I don't want to single"
+            },
+            {
+              "t0": 20.08,
+              "t1": 21.71,
+              "text": "out individual tickets."
+            },
+            {
+              "t0": 21.76,
+              "t1": 24.28,
+              "text": "It's just turning off a server."
+            }
+          ]
+        },
+        {
+          "id": "PLAT-2340-2",
+          "src": "audio/logs/PLAT-2340-2.mp3",
+          "speaker": "marcus",
+          "fx": "recorder",
+          "duration": 16.927,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 3.87,
+              "text": "Priya's retro action item was to stop saying 'it's just' in"
+            },
+            {
+              "t0": 3.92,
+              "t1": 8.35,
+              "text": "planning. Noted. Great energy."
+            },
+            {
+              "t0": 8.4,
+              "t1": 10.59,
+              "text": "Whoever is knocking on the glass..."
+            },
+            {
+              "t0": 10.64,
+              "t1": 12.33,
+              "text": "we are in a meeting."
+            },
+            {
+              "t0": 12.38,
+              "t1": 14.59,
+              "text": "Let's take this offline."
+            },
+            {
+              "t0": 14.64,
+              "t1": 17.56,
+              "text": "Sprint forty-seven is locked."
+            }
+          ]
+        }
+      ],
+      "duration": 41.35
+    },
+    {
+      "order": 7,
+      "ticket": "WEB-901",
+      "room": "bullpen",
+      "speaker": "tom",
+      "title": "Dark Mode",
+      "recorded": "OCT 18 2026 / 00:00",
+      "info": {
+        "key": "WEB-901",
+        "summary": "Dark mode setting doesn't persist after page refresh",
+        "type": "Bug",
+        "status": "Closed",
+        "resolution": "Won't Do",
+        "priority": "Low",
+        "assignee": null,
+        "reporter": "Tom Becker",
+        "created": "2026-03-24T15:10:00.000-0400",
+        "updated": "2026-10-18T00:00:04.000-0400",
+        "storyPoints": null,
+        "comments": 9
+      },
+      "clips": [
+        {
+          "id": "WEB-901-1",
+          "src": "audio/logs/WEB-901-1.mp3",
+          "speaker": "tom",
+          "fx": "recorder",
+          "duration": 25.731,
+          "cues": [
+            {
+              "t0": 0.08,
+              "t1": 2.99,
+              "text": "Tom Becker. WEB-901."
+            },
+            {
+              "t0": 3.04,
+              "t1": 5.07,
+              "text": "Dark mode does not persist."
+            },
+            {
+              "t0": 5.12,
+              "t1": 6.51,
+              "text": "Steps to reproduce."
+            },
+            {
+              "t0": 6.56,
+              "t1": 8.59,
+              "text": "One: I turn the lights off."
+            },
+            {
+              "t0": 8.64,
+              "t1": 11.3,
+              "text": "Two: I refresh. Three..."
+            },
+            {
+              "t0": 11.35,
+              "t1": 12.59,
+              "text": "the lights are back on."
+            },
+            {
+              "t0": 12.64,
+              "t1": 16.55,
+              "text": "Every time. I have a screen recording!"
+            },
+            {
+              "t0": 16.6,
+              "t1": 18.72,
+              "text": "Kevin says it works on his machine."
+            },
+            {
+              "t0": 18.76,
+              "t1": 21.28,
+              "text": "It got closed after a hundred and eighty days."
+            },
+            {
+              "t0": 21.32,
+              "t1": 24.64,
+              "text": "I reopened it. It got closed for having no assignee."
+            },
+            {
+              "t0": 24.68,
+              "t1": 26.28,
+              "text": "I reopened it."
+            }
+          ]
+        },
+        {
+          "id": "WEB-901-2",
+          "src": "audio/logs/WEB-901-2.mp3",
+          "speaker": "tom",
+          "fx": "recorder",
+          "duration": 9.561,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 1.96,
+              "text": "It just closed itself again."
+            },
+            {
+              "t0": 2,
+              "t1": 5.23,
+              "text": "Reason: 'reopened more than two times.'"
+            },
+            {
+              "t0": 5.28,
+              "t1": 7.15,
+              "text": "It's watching the ticket."
+            },
+            {
+              "t0": 7.2,
+              "t1": 10.2,
+              "text": "Okay. I'm reopening it one more ti—"
+            }
+          ]
+        },
+        {
+          "id": "WEB-901-3",
+          "src": "audio/logs/WEB-901-3.mp3",
+          "speaker": "station_ai",
+          "fx": "pa",
+          "duration": 4.754,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 2.07,
+              "text": "Reporter permissions updated."
+            },
+            {
+              "t0": 2.12,
+              "t1": 5.4,
+              "text": "Tom Becker can no longer reopen issues."
+            }
+          ]
+        }
+      ],
+      "duration": 41.1
+    },
+    {
+      "order": 8,
+      "ticket": "PLAT-2291",
+      "room": "bullpen",
+      "speaker": "jen",
+      "title": "Between Two and Four",
+      "recorded": "OCT 21 2026 / 02:47",
+      "info": {
+        "key": "PLAT-2291",
+        "summary": "Flaky test: test_payment_retry_backoff fails intermittently on CI",
+        "type": "Bug",
+        "status": "To Do",
+        "resolution": null,
+        "priority": "Medium",
+        "assignee": "Jen Alvarez",
+        "reporter": "Jen Alvarez",
+        "created": "2026-07-02T11:20:00.000-0400",
+        "updated": "2026-10-21T02:47:19.000-0400",
+        "storyPoints": 2,
+        "comments": 7
+      },
+      "clips": [
+        {
+          "id": "PLAT-2291-1",
+          "src": "audio/logs/PLAT-2291-1.mp3",
+          "speaker": "jen",
+          "fx": "recorder",
+          "duration": 26.201,
+          "cues": [
+            {
+              "t0": 0.16,
+              "t1": 4.51,
+              "text": "Jen Alvarez, QA. PLAT-2291."
+            },
+            {
+              "t0": 4.56,
+              "t1": 6.67,
+              "text": "Test payment retry backoff."
+            },
+            {
+              "t0": 6.72,
+              "t1": 8.91,
+              "text": "Expected three retry attempts."
+            },
+            {
+              "t0": 8.96,
+              "t1": 12.23,
+              "text": "Got one thousand, one hundred and forty-eight."
+            },
+            {
+              "t0": 12.28,
+              "t1": 14.91,
+              "text": "It only fails between two and four a.m."
+            },
+            {
+              "t0": 14.96,
+              "t1": 18.43,
+              "text": "So I came in at two a.m."
+            },
+            {
+              "t0": 18.48,
+              "t1": 22.83,
+              "text": "Earlier this year, Tom fixed it by making the retry test retry."
+            },
+            {
+              "t0": 22.88,
+              "t1": 24.27,
+              "text": "I asked him not to."
+            },
+            {
+              "t0": 24.32,
+              "t1": 26.76,
+              "text": "The test is ABOUT retries."
+            }
+          ]
+        },
+        {
+          "id": "PLAT-2291-2",
+          "src": "audio/logs/PLAT-2291-2.mp3",
+          "speaker": "jen",
+          "fx": "recorder",
+          "duration": 19.879,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 2.67,
+              "text": "Here's the part nobody wants to hear."
+            },
+            {
+              "t0": 2.72,
+              "t1": 6.39,
+              "text": "The extra eleven hundred and forty-seven aren't coming from the"
+            },
+            {
+              "t0": 6.44,
+              "t1": 12.03,
+              "text": "test. Something else on the network is answering for the ledger."
+            },
+            {
+              "t0": 12.08,
+              "t1": 13.95,
+              "text": "It's failing right now."
+            },
+            {
+              "t0": 14,
+              "t1": 16.12,
+              "text": "And I can hear fans."
+            },
+            {
+              "t0": 16.16,
+              "t1": 17.63,
+              "text": "From the stairwell."
+            },
+            {
+              "t0": 17.68,
+              "t1": 20.52,
+              "text": "Do we have servers in this building?"
+            }
+          ]
+        }
+      ],
+      "duration": 46.78
+    },
+    {
+      "order": 9,
+      "ticket": "IT-4451",
+      "room": "bullpen",
+      "speaker": "raj",
+      "title": "Off and On Again",
+      "recorded": "OCT 15 2026 / 09:31",
+      "info": {
+        "key": "IT-4451",
+        "summary": "Printer PRN-3F-01 printing jobs nobody sent",
+        "type": "Incident",
+        "status": "Open",
+        "resolution": null,
+        "priority": "Low",
+        "assignee": "Raj Iyer",
+        "reporter": "Jen Alvarez",
+        "created": "2026-10-07T08:44:10.000-0400",
+        "updated": "2026-10-15T09:31:55.000-0400",
+        "storyPoints": null,
+        "comments": 6
+      },
+      "clips": [
+        {
+          "id": "IT-4451-1",
+          "src": "audio/logs/IT-4451-1.mp3",
+          "speaker": "raj",
+          "fx": "recorder",
+          "duration": 30.929,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 2.99,
+              "text": "IT Helpdesk. Raj Iyer."
+            },
+            {
+              "t0": 3.04,
+              "t1": 10.59,
+              "text": "IT-4451. Printer P-R-N three F zero one is printing jobs nobody"
+            },
+            {
+              "t0": 10.64,
+              "t1": 14.11,
+              "text": "sent. The print queue is empty."
+            },
+            {
+              "t0": 14.16,
+              "t1": 16.59,
+              "text": "I suggested turning it off and on again."
+            },
+            {
+              "t0": 16.64,
+              "t1": 20.19,
+              "text": "When it came back on, it printed the same four hundred pages"
+            },
+            {
+              "t0": 20.24,
+              "t1": 26.27,
+              "text": "again. Logs say the jobs come from 10.0.6.12."
+            },
+            {
+              "t0": 26.32,
+              "t1": 28.75,
+              "text": "That IP is not on our network."
+            },
+            {
+              "t0": 28.8,
+              "t1": 31.48,
+              "text": "Jen pointed out that the printer is."
+            }
+          ]
+        },
+        {
+          "id": "IT-4451-2",
+          "src": "audio/logs/IT-4451-2.mp3",
+          "speaker": "raj",
+          "fx": "recorder",
+          "duration": 19.801,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 3.15,
+              "text": "This morning's batch was eleven hundred and forty-seven"
+            },
+            {
+              "t0": 3.2,
+              "t1": 6.6,
+              "text": "invoices. Dated 2016."
+            },
+            {
+              "t0": 6.64,
+              "t1": 12.019,
+              "text": "Every footer says 'retry pending, G.W.'"
+            },
+            {
+              "t0": 12.069,
+              "t1": 14.67,
+              "text": "I've unplugged the network cable."
+            },
+            {
+              "t0": 14.72,
+              "t1": 17.63,
+              "text": "It's still printing."
+            },
+            {
+              "t0": 17.68,
+              "t1": 20.44,
+              "text": "Lowering priority to Low."
+            }
+          ]
+        }
+      ],
+      "duration": 51.43
+    },
+    {
+      "order": 10,
+      "ticket": "PLAT-2105",
+      "room": "bullpen",
+      "speaker": "tom",
+      "title": "Node Zero Dot Ten",
+      "recorded": "OCT 16 2026 / 15:20",
+      "info": {
+        "key": "PLAT-2105",
+        "summary": "Upgrade Node.js 16 -> 20 across all services (Node 16 is EOL)",
+        "type": "Task",
+        "status": "In Progress",
+        "resolution": null,
+        "priority": "High",
+        "assignee": "Tom Becker",
+        "reporter": "Dave Kowalski",
+        "created": "2026-04-06T09:30:00.000-0400",
+        "updated": "2026-10-16T15:20:11.000-0400",
+        "storyPoints": 5,
+        "comments": 7
+      },
+      "clips": [
+        {
+          "id": "PLAT-2105-1",
+          "src": "audio/logs/PLAT-2105-1.mp3",
+          "speaker": "tom",
+          "fx": "recorder",
+          "duration": 24.268,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 2.83,
+              "text": "Tom Becker. PLAT-2105."
+            },
+            {
+              "t0": 2.88,
+              "t1": 4.75,
+              "text": "Node sixteen to twenty."
+            },
+            {
+              "t0": 4.8,
+              "t1": 8.247,
+              "text": "Thirty-seven out of thirty-eight services done!"
+            },
+            {
+              "t0": 8.297,
+              "t1": 12.35,
+              "text": "The last one is billing-legacy, on bill-legacy-01."
+            },
+            {
+              "t0": 12.4,
+              "t1": 14.67,
+              "text": "It's on Node zero dot ten."
+            },
+            {
+              "t0": 14.72,
+              "t1": 16.72,
+              "text": "Priya says that's not a typo."
+            },
+            {
+              "t0": 16.76,
+              "t1": 20.137,
+              "text": "There's no repo. The only copy of the source was on Gary's"
+            },
+            {
+              "t0": 20.187,
+              "t1": 24.84,
+              "text": "laptop, and Gary's laptop was wiped when he left, in 2016."
+            }
+          ]
+        },
+        {
+          "id": "PLAT-2105-2",
+          "src": "audio/logs/PLAT-2105-2.mp3",
+          "speaker": "tom",
+          "fx": "recorder",
+          "duration": 22.047,
+          "cues": [
+            {
+              "t0": 0.48,
+              "t1": 4.64,
+              "text": "My loaner is asset HAL zero zero four two."
+            },
+            {
+              "t0": 4.68,
+              "t1": 6.32,
+              "text": "The login screen says G."
+            },
+            {
+              "t0": 6.36,
+              "t1": 10.51,
+              "text": "Whitfield. There's a folder in Users, slash Shared."
+            },
+            {
+              "t0": 10.56,
+              "t1": 14.83,
+              "text": "billing-retry-W-I-P."
+            },
+            {
+              "t0": 14.88,
+              "t1": 17.527,
+              "text": "Last modified... this morning."
+            },
+            {
+              "t0": 17.577,
+              "t1": 20.537,
+              "text": "I didn't open it. I want that on the record."
+            },
+            {
+              "t0": 20.587,
+              "t1": 22.68,
+              "text": "I did not open it."
+            }
+          ]
+        }
+      ],
+      "duration": 47.02
+    },
+    {
+      "order": 11,
+      "ticket": "PLAT-2310",
+      "room": "server_room",
+      "speaker": "dave",
+      "title": "Oh-Three-Twelve",
+      "recorded": "SEP 15 2026 / 03:12",
+      "info": {
+        "key": "PLAT-2310",
+        "summary": "INCIDENT: checkout returning 500s, p99 latency 14s",
+        "type": "Bug",
+        "status": "Done",
+        "resolution": "Done",
+        "priority": "Highest",
+        "assignee": "Dave Kowalski",
+        "reporter": "PagerDuty (bot)",
+        "created": "2026-09-15T03:12:00.000-0400",
+        "updated": "2026-09-18T11:04:37.000-0400",
+        "storyPoints": null,
+        "comments": 9
+      },
+      "clips": [
+        {
+          "id": "PLAT-2310-1",
+          "src": "audio/logs/PLAT-2310-1.mp3",
+          "speaker": "dave",
+          "fx": "recorder",
+          "duration": 11.154,
+          "cues": [
+            {
+              "t0": 1.2,
+              "t1": 3.39,
+              "text": "Dave Kowalski. On-call."
+            },
+            {
+              "t0": 3.44,
+              "t1": 5.79,
+              "text": "Oh-three-twelve. Paged."
+            },
+            {
+              "t0": 5.84,
+              "t1": 7.79,
+              "text": "Checkout's throwing five hundreds."
+            },
+            {
+              "t0": 7.84,
+              "t1": 10.35,
+              "text": "Rolled back four eighteen two."
+            },
+            {
+              "t0": 10.4,
+              "t1": 11.72,
+              "text": "No change."
+            }
+          ]
+        },
+        {
+          "id": "PLAT-2310-2",
+          "src": "audio/logs/PLAT-2310-2.mp3",
+          "speaker": "dave",
+          "fx": "recorder",
+          "duration": 26.593,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 1.63,
+              "text": "Oh-three-fifty-eight."
+            },
+            {
+              "t0": 1.68,
+              "t1": 4.75,
+              "text": "Primary database pegged at a hundred percent."
+            },
+            {
+              "t0": 4.8,
+              "t1": 7.71,
+              "text": "Same query, forty times a second."
+            },
+            {
+              "t0": 7.76,
+              "t1": 12.52,
+              "text": "Select star from invoices, where status equals pending retry."
+            },
+            {
+              "t0": 12.56,
+              "t1": 18.59,
+              "text": "Source: 10.0.6.12. That address doesn't resolve."
+            },
+            {
+              "t0": 18.64,
+              "t1": 22.27,
+              "text": "Not in the CMDB. Not in AWS."
+            },
+            {
+              "t0": 22.32,
+              "t1": 27.16,
+              "text": "It's on-prem. We don't HAVE on-prem."
+            }
+          ]
+        },
+        {
+          "id": "PLAT-2310-3",
+          "src": "audio/logs/PLAT-2310-3.mp3",
+          "speaker": "dave",
+          "fx": "recorder",
+          "duration": 27.559,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 3.63,
+              "text": "Oh-five-forty. Rate-limited it at the proxy."
+            },
+            {
+              "t0": 3.68,
+              "t1": 9.56,
+              "text": "Checkout's back. Marcus wants a customer-friendly RCA."
+            },
+            {
+              "t0": 9.6,
+              "t1": 15.55,
+              "text": "Fine. 'A legacy dependency experienced elevated retry behavior.'"
+            },
+            {
+              "t0": 15.6,
+              "t1": 18.027,
+              "text": "What I'm not putting in the RCA..."
+            },
+            {
+              "t0": 18.053,
+              "t1": 21.03,
+              "text": "is that it's been retrying the same eleven hundred and"
+            },
+            {
+              "t0": 21.08,
+              "t1": 25.95,
+              "text": "forty-seven invoices every night since 2016."
+            },
+            {
+              "t0": 26,
+              "t1": 28.2,
+              "text": "Going back to bed."
+            }
+          ]
+        }
+      ],
+      "duration": 66.36
+    },
+    {
+      "order": 12,
+      "ticket": "PLAT-2333",
+      "room": "server_room",
+      "speaker": "ana",
+      "title": "Retry Pending",
+      "recorded": "OCT 02 2026 / 13:31",
+      "info": {
+        "key": "PLAT-2333",
+        "summary": "Customers receiving duplicate 'Your payment failed' emails at 3:00am",
+        "type": "Bug",
+        "status": "Blocked",
+        "resolution": null,
+        "priority": "High",
+        "assignee": "Dave Kowalski",
+        "reporter": "Ana Souza",
+        "created": "2026-09-08T09:15:00.000-0400",
+        "updated": "2026-10-02T13:31:10.000-0400",
+        "storyPoints": null,
+        "comments": 5
+      },
+      "clips": [
+        {
+          "id": "PLAT-2333-1",
+          "src": "audio/logs/PLAT-2333-1.mp3",
+          "speaker": "ana",
+          "fx": "recorder",
+          "duration": 33.149,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 2.83,
+              "text": "Ana Souza, Customer Support."
+            },
+            {
+              "t0": 2.88,
+              "t1": 8.35,
+              "text": "PLAT-2333. Forty-one tickets this week."
+            },
+            {
+              "t0": 8.4,
+              "t1": 12.27,
+              "text": "Customers getting 'Your payment failed, we'll retry soon!'"
+            },
+            {
+              "t0": 12.32,
+              "t1": 15.15,
+              "text": "emails. At exactly three a.m."
+            },
+            {
+              "t0": 15.2,
+              "t1": 17.63,
+              "text": "For invoices from 2016."
+            },
+            {
+              "t0": 17.68,
+              "t1": 20.27,
+              "text": "Several of these customers left years ago."
+            },
+            {
+              "t0": 20.32,
+              "t1": 23.55,
+              "text": "One of them is a company that doesn't exist anymore."
+            },
+            {
+              "t0": 23.6,
+              "t1": 25.23,
+              "text": "Dave disabled the cron."
+            },
+            {
+              "t0": 25.28,
+              "t1": 26.83,
+              "text": "It's still happening."
+            },
+            {
+              "t0": 26.88,
+              "t1": 28.99,
+              "text": "Three a.m., on the dot."
+            },
+            {
+              "t0": 29.04,
+              "t1": 33.72,
+              "text": "The sender is bill-legacy-01."
+            }
+          ]
+        },
+        {
+          "id": "PLAT-2333-2",
+          "src": "audio/logs/PLAT-2333-2.mp3",
+          "speaker": "ana",
+          "fx": "recorder",
+          "duration": 15.804,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 4.51,
+              "text": "Today, a customer replied, asking us to please stop."
+            },
+            {
+              "t0": 4.56,
+              "t1": 6.63,
+              "text": "And we got an auto-reply."
+            },
+            {
+              "t0": 6.68,
+              "t1": 8.27,
+              "text": "'Thanks for your patience!"
+            },
+            {
+              "t0": 8.32,
+              "t1": 11.55,
+              "text": "Retry pending. I'll have this wrapped up by Monday."
+            },
+            {
+              "t0": 11.6,
+              "t1": 16.44,
+              "text": "Gary.' It's been Monday for ten years."
+            }
+          ]
+        }
+      ],
+      "duration": 49.65
+    },
+    {
+      "order": 13,
+      "ticket": "FAC-231",
+      "room": "stairwell",
+      "speaker": "linda",
+      "title": "Level B",
+      "recorded": "OCT 14 2026 / 12:20",
+      "info": {
+        "key": "FAC-231",
+        "summary": "Badge access needed for basement Cage B",
+        "type": "Facilities Request",
+        "status": "Waiting for Customer",
+        "resolution": null,
+        "priority": "Medium",
+        "assignee": "Linda Okafor",
+        "reporter": "Dave Kowalski",
+        "created": "2026-10-05T16:40:00.000-0400",
+        "updated": "2026-10-14T12:20:48.000-0400",
+        "storyPoints": null,
+        "comments": 6
+      },
+      "clips": [
+        {
+          "id": "FAC-231-1",
+          "src": "audio/logs/FAC-231-1.mp3",
+          "speaker": "linda",
+          "fx": "recorder",
+          "duration": 24.268,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 1.63,
+              "text": "Quartermaster's log."
+            },
+            {
+              "t0": 1.68,
+              "t1": 7.47,
+              "text": "Linda Okafor. Dave has requested badge access to Cage B, in the"
+            },
+            {
+              "t0": 7.52,
+              "t1": 11.71,
+              "text": "basement. Our building does not have a basement."
+            },
+            {
+              "t0": 11.76,
+              "t1": 13.07,
+              "text": "I have the floor plans."
+            },
+            {
+              "t0": 13.12,
+              "t1": 17.23,
+              "text": "I have the lease. Building Management confirms: tenant space"
+            },
+            {
+              "t0": 17.28,
+              "t1": 18.99,
+              "text": "ends at the ground floor."
+            },
+            {
+              "t0": 19.04,
+              "t1": 21.71,
+              "text": "Level B was sealed in 2016."
+            },
+            {
+              "t0": 21.76,
+              "t1": 24.84,
+              "text": "There is no power provisioned to Level B."
+            }
+          ]
+        },
+        {
+          "id": "FAC-231-2",
+          "src": "audio/logs/FAC-231-2.mp3",
+          "speaker": "linda",
+          "fx": "recorder",
+          "duration": 17.398,
+          "cues": [
+            {
+              "t0": 0.08,
+              "t1": 3.07,
+              "text": "I'm standing at the stairwell past the loading dock."
+            },
+            {
+              "t0": 3.12,
+              "t1": 6.27,
+              "text": "The door is propped open with a fire extinguisher."
+            },
+            {
+              "t0": 6.32,
+              "t1": 8.91,
+              "text": "Dave's fire extinguisher."
+            },
+            {
+              "t0": 8.96,
+              "t1": 11.71,
+              "text": "There are stairs. Going down."
+            },
+            {
+              "t0": 11.76,
+              "t1": 15.31,
+              "text": "It's very warm. And I can hear fans."
+            },
+            {
+              "t0": 15.36,
+              "t1": 18.04,
+              "text": "Then what is it plugged into?"
+            }
+          ]
+        }
+      ],
+      "duration": 42.37
+    },
+    {
+      "order": 14,
+      "ticket": "PLAT-2350",
+      "room": "stairwell",
+      "speaker": "tom",
+      "title": "Runbook",
+      "recorded": "OCT 22 2026 / 03:14",
+      "info": {
+        "key": "PLAT-2350",
+        "summary": "Rotate on-call schedule (Dave has been primary for 6 weeks)",
+        "type": "Task",
+        "status": "In Progress",
+        "resolution": null,
+        "priority": "High",
+        "assignee": "Marcus Chen",
+        "reporter": "Dave Kowalski",
+        "created": "2026-09-29T19:20:00.000-0400",
+        "updated": "2026-10-22T03:14:51.000-0400",
+        "storyPoints": null,
+        "comments": 7
+      },
+      "clips": [
+        {
+          "id": "PLAT-2350-1",
+          "src": "audio/logs/PLAT-2350-1.mp3",
+          "speaker": "tom",
+          "fx": "recorder",
+          "duration": 20.767,
+          "cues": [
+            {
+              "t0": 0.08,
+              "t1": 2.35,
+              "text": "Tom Becker. On-call."
+            },
+            {
+              "t0": 2.4,
+              "t1": 4.99,
+              "text": "Oh-three-fourteen. Paged for billing."
+            },
+            {
+              "t0": 5.04,
+              "t1": 7.03,
+              "text": "Ledger sync timeouts."
+            },
+            {
+              "t0": 7.08,
+              "t1": 10.35,
+              "text": "Dave's on PTO. Before he left, he said the runbook for"
+            },
+            {
+              "t0": 10.4,
+              "t1": 13.67,
+              "text": "bill-legacy-01 is one word long."
+            },
+            {
+              "t0": 13.72,
+              "t1": 15.99,
+              "text": "The word is 'don't'."
+            },
+            {
+              "t0": 16.04,
+              "t1": 20.03,
+              "text": "And then he said, Tom, whatever happens, do not go down to Cage"
+            },
+            {
+              "t0": 20.08,
+              "t1": 21.32,
+              "text": "B."
+            }
+          ]
+        },
+        {
+          "id": "PLAT-2350-2",
+          "src": "audio/logs/PLAT-2350-2.mp3",
+          "speaker": "tom",
+          "fx": "recorder",
+          "duration": 17.789,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 1.79,
+              "text": "Nobody's answering Slack."
+            },
+            {
+              "t0": 1.84,
+              "t1": 4.51,
+              "text": "Priya hasn't been online since Tuesday."
+            },
+            {
+              "t0": 4.56,
+              "t1": 7.79,
+              "text": "Jen's laptop is open on her desk."
+            },
+            {
+              "t0": 7.84,
+              "t1": 13.127,
+              "text": "Okay. I'm primary. I'm going to go down and check on it."
+            },
+            {
+              "t0": 13.177,
+              "t1": 15.23,
+              "text": "There's a light on down there."
+            },
+            {
+              "t0": 15.28,
+              "t1": 18.36,
+              "text": "Hello? Priya?"
+            }
+          ]
+        }
+      ],
+      "duration": 39.26
+    },
+    {
+      "order": 15,
+      "ticket": "PLAT-1874",
+      "room": "cage_b",
+      "speaker": "priya",
+      "title": "There Is No Code Path",
+      "recorded": "OCT 20 2026 / 18:33",
+      "info": {
+        "key": "PLAT-1874",
+        "summary": "Decommission legacy billing server bill-legacy-01",
+        "type": "Task",
+        "status": "Reopened",
+        "resolution": null,
+        "priority": "Highest",
+        "assignee": "Priya Raman",
+        "reporter": "Marcus Chen",
+        "created": "2026-08-03T09:00:00.000-0400",
+        "updated": "2026-10-14T18:33:21.000-0400",
+        "storyPoints": 3,
+        "comments": 11
+      },
+      "clips": [
+        {
+          "id": "PLAT-1874-1",
+          "src": "audio/logs/PLAT-1874-1.mp3",
+          "speaker": "priya",
+          "fx": "recorder",
+          "duration": 32.209,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 5.15,
+              "text": "Priya Raman. PLAT-1874."
+            },
+            {
+              "t0": 5.2,
+              "t1": 8.35,
+              "text": "Decommission bill-legacy-01."
+            },
+            {
+              "t0": 8.4,
+              "t1": 14.35,
+              "text": "Three points. October ninth, eighteen-02: Dave shut it down."
+            },
+            {
+              "t0": 14.4,
+              "t1": 18.59,
+              "text": "Eighteen-03: billing-v2 started failing."
+            },
+            {
+              "t0": 18.64,
+              "t1": 24.35,
+              "text": "Eighteen-05: he turned it back on, and everything recovered."
+            },
+            {
+              "t0": 24.4,
+              "t1": 26.43,
+              "text": "That is not possible."
+            },
+            {
+              "t0": 26.48,
+              "t1": 28.75,
+              "text": "billing-v2 doesn't call it."
+            },
+            {
+              "t0": 28.8,
+              "t1": 30.67,
+              "text": "There is no code path."
+            },
+            {
+              "t0": 30.72,
+              "t1": 32.76,
+              "text": "I grepped everything."
+            }
+          ]
+        },
+        {
+          "id": "PLAT-1874-2",
+          "src": "audio/logs/PLAT-1874-2.mp3",
+          "speaker": "priya",
+          "fx": "recorder",
+          "duration": 34.194,
+          "cues": [
+            {
+              "t0": 0.24,
+              "t1": 3.39,
+              "text": "So I came down to read the code myself."
+            },
+            {
+              "t0": 3.44,
+              "t1": 5.95,
+              "text": "The console is still logged in."
+            },
+            {
+              "t0": 6,
+              "t1": 11.07,
+              "text": "User: gwhitfield. Idle: three thousand, seven hundred and one"
+            },
+            {
+              "t0": 11.12,
+              "t1": 13.87,
+              "text": "days. There's a sticky note."
+            },
+            {
+              "t0": 13.92,
+              "t1": 16.647,
+              "text": "'Almost done, back Monday.'"
+            },
+            {
+              "t0": 16.697,
+              "t1": 18.27,
+              "text": "It isn't calling us."
+            },
+            {
+              "t0": 18.32,
+              "t1": 23.31,
+              "text": "WE are calling IT. Every ledger write since 2016 goes through"
+            },
+            {
+              "t0": 23.36,
+              "t1": 25.07,
+              "text": "Gary's retry queue."
+            },
+            {
+              "t0": 25.12,
+              "t1": 29.87,
+              "text": "In memory. We never migrated anything."
+            },
+            {
+              "t0": 29.92,
+              "t1": 31.95,
+              "text": "The fans just got louder."
+            },
+            {
+              "t0": 32,
+              "t1": 34.84,
+              "text": "I don't think it likes being read."
+            }
+          ]
+        }
+      ],
+      "duration": 67.1
+    },
+    {
+      "order": 16,
+      "ticket": "PLAT-88",
+      "room": "cage_b",
+      "speaker": "gary",
+      "title": "Back Monday",
+      "recorded": "AUG 26 2016 / 17:58",
+      "info": {
+        "key": "PLAT-88",
+        "summary": "billing: add retry on invoice push to ledger",
+        "type": "Story",
+        "status": "In Progress",
+        "resolution": null,
+        "priority": "Medium",
+        "assignee": "Gary Whitfield (deactivated)",
+        "reporter": "Gary Whitfield (deactivated)",
+        "created": "2014-06-11T14:22:00.000-0400",
+        "updated": "2026-10-29T03:00:00.000-0400",
+        "storyPoints": 2,
+        "comments": 9
+      },
+      "clips": [
+        {
+          "id": "PLAT-88-1",
+          "src": "audio/logs/PLAT-88-1.mp3",
+          "speaker": "gary",
+          "fx": "tape",
+          "duration": 19.566,
+          "cues": [
+            {
+              "t0": 0.88,
+              "t1": 3.23,
+              "text": "Hey there, whoever picks this up."
+            },
+            {
+              "t0": 3.28,
+              "t1": 5.39,
+              "text": "Gary Whitfield, billing."
+            },
+            {
+              "t0": 5.44,
+              "t1": 9.79,
+              "text": "PLAT-88, retry on invoice push."
+            },
+            {
+              "t0": 9.84,
+              "t1": 11.687,
+              "text": "Should be a quick one."
+            },
+            {
+              "t0": 11.737,
+              "t1": 14.99,
+              "text": "It's my last day, so I'm running it from my branch on"
+            },
+            {
+              "t0": 15.04,
+              "t1": 18.35,
+              "text": "bill-legacy-01 for now."
+            },
+            {
+              "t0": 18.4,
+              "t1": 20.12,
+              "text": "I'll merge it after."
+            }
+          ]
+        },
+        {
+          "id": "PLAT-88-2",
+          "src": "audio/logs/PLAT-88-2.mp3",
+          "speaker": "gary",
+          "fx": "tape",
+          "duration": 23.562,
+          "cues": [
+            {
+              "t0": 0,
+              "t1": 2.19,
+              "text": "Now, this is important."
+            },
+            {
+              "t0": 2.24,
+              "t1": 5.08,
+              "text": "PLEASE do not restart the box."
+            },
+            {
+              "t0": 5.12,
+              "t1": 7.24,
+              "text": "The retry queue is in memory."
+            },
+            {
+              "t0": 7.28,
+              "t1": 9.72,
+              "text": "Hasn't been persisted to disk yet."
+            },
+            {
+              "t0": 9.76,
+              "t1": 13.71,
+              "text": "Eleven hundred and forty-seven invoices in flight."
+            },
+            {
+              "t0": 13.76,
+              "t1": 18.11,
+              "text": "Oh, they'll keep. It retries forever, that's the whole point."
+            },
+            {
+              "t0": 18.16,
+              "t1": 20.19,
+              "text": "Never lose an invoice!"
+            },
+            {
+              "t0": 20.24,
+              "t1": 22.27,
+              "text": "I'll finish it Monday."
+            },
+            {
+              "t0": 22.32,
+              "t1": 24.2,
+              "text": "Should be a quick one."
+            }
+          ]
+        }
+      ],
+      "duration": 43.83
+    }
+  ],
+  "broadcasts": {
+    "intro": {
+      "id": "ai-intro",
+      "src": "audio/ai/intro.mp3",
+      "speaker": "station_ai",
+      "fx": "pa",
+      "duration": 16.196,
+      "cues": [
+        {
+          "t0": 0,
+          "t1": 2.19,
+          "text": "Welcome back to Halcyon Station."
+        },
+        {
+          "t0": 2.24,
+          "t1": 6.59,
+          "text": "I am S.C.R.U.M., your Station Coordination, Resolution and"
+        },
+        {
+          "t0": 6.64,
+          "t1": 8.567,
+          "text": "Utilization Mainframe."
+        },
+        {
+          "t0": 8.617,
+          "t1": 10.31,
+          "text": "All crew are currently..."
+        },
+        {
+          "t0": 10.36,
+          "t1": 11.71,
+          "text": "away from their desks."
+        },
+        {
+          "t0": 11.76,
+          "t1": 14.07,
+          "text": "Your onboarding ticket has been created."
+        },
+        {
+          "t0": 14.12,
+          "t1": 16.84,
+          "text": "Please do not restart anything."
+        }
+      ]
+    },
+    "stairwell": {
+      "id": "ai-stairwell",
+      "src": "audio/ai/stairwell.mp3",
+      "speaker": "station_ai",
+      "fx": "pa",
+      "duration": 7.967,
+      "cues": [
+        {
+          "t0": 0,
+          "t1": 3.15,
+          "text": "Notice. Level B does not exist."
+        },
+        {
+          "t0": 3.2,
+          "t1": 6.55,
+          "text": "There is no power provisioned to Level B."
+        },
+        {
+          "t0": 6.6,
+          "t1": 8.6,
+          "text": "Please return to your desk."
+        }
+      ]
+    },
+    "outro": {
+      "id": "ai-outro",
+      "src": "audio/ai/outro.mp3",
+      "speaker": "station_ai",
+      "fx": "pa",
+      "duration": 12.042,
+      "cues": [
+        {
+          "t0": 0,
+          "t1": 1.95,
+          "text": "Assignee is inactive."
+        },
+        {
+          "t0": 2,
+          "t1": 6.99,
+          "text": "PLAT-88 has been reassigned to the next available team member."
+        },
+        {
+          "t0": 7.04,
+          "t1": 10.11,
+          "text": "Welcome aboard. You have one thousand, one hundred and"
+        },
+        {
+          "t0": 10.16,
+          "t1": 12.68,
+          "text": "forty-seven invoices in flight."
+        }
+      ]
+    },
+    "ambient-1": {
+      "id": "ai-ambient-1",
+      "src": "audio/ai/ambient-1.mp3",
+      "speaker": "station_ai",
+      "fx": "pa",
+      "duration": 9.874,
+      "cues": [
+        {
+          "t0": 0,
+          "t1": 2.51,
+          "text": "Reminder: one day remaining."
+        },
+        {
+          "t0": 2.56,
+          "t1": 5.47,
+          "text": "Company completion: forty-three percent."
+        },
+        {
+          "t0": 5.52,
+          "t1": 8.03,
+          "text": "Escalating to managers."
+        },
+        {
+          "t0": 8.08,
+          "t1": 10.52,
+          "text": "Managers have not responded."
+        }
+      ]
+    },
+    "ambient-2": {
+      "id": "ai-ambient-2",
+      "src": "audio/ai/ambient-2.mp3",
+      "speaker": "station_ai",
+      "fx": "pa",
+      "duration": 6.609,
+      "cues": [
+        {
+          "t0": 0,
+          "t1": 3.15,
+          "text": "This issue has been automatically closed after one hundred and"
+        },
+        {
+          "t0": 3.2,
+          "t1": 5.08,
+          "text": "eighty days without activity."
+        },
+        {
+          "t0": 5.12,
+          "t1": 7.24,
+          "text": "Thank you for your patience."
+        }
+      ]
+    },
+    "ambient-3": {
+      "id": "ai-ambient-3",
+      "src": "audio/ai/ambient-3.mp3",
+      "speaker": "station_ai",
+      "fx": "pa",
+      "duration": 4.598,
+      "cues": [
+        {
+          "t0": 0,
+          "t1": 3.87,
+          "text": "Budget request deferred to Q1, per the current hiring and spend"
+        },
+        {
+          "t0": 3.92,
+          "t1": 5.24,
+          "text": "freeze."
+        }
+      ]
+    },
+    "ambient-4": {
+      "id": "ai-ambient-4",
+      "src": "audio/ai/ambient-4.mp3",
+      "speaker": "station_ai",
+      "fx": "pa",
+      "duration": 4.598,
+      "cues": [
+        {
+          "t0": 0,
+          "t1": 2.91,
+          "text": "Postmortem review has been moved to next week."
+        },
+        {
+          "t0": 2.96,
+          "t1": 5.24,
+          "text": "Calendars are tough!"
+        }
+      ]
+    },
+    "ambient-5": {
+      "id": "ai-ambient-5",
+      "src": "audio/ai/ambient-5.mp3",
+      "speaker": "station_ai",
+      "fx": "pa",
+      "duration": 4.989,
+      "cues": [
+        {
+          "t0": 0,
+          "t1": 3.47,
+          "text": "Story points have been added to Sprint forty-seven velocity."
+        },
+        {
+          "t0": 3.52,
+          "t1": 5.64,
+          "text": "Great energy, everyone."
+        }
+      ]
+    }
+  },
+  "terminals": [
+    {
+      "ticket": "PEOPLE-38",
+      "room": "reception",
+      "info": {
+        "key": "PEOPLE-38",
+        "summary": "Offboarding: Gary Whitfield (last day Fri Aug 26, 2016)",
+        "type": "Task",
+        "status": "In Progress",
+        "resolution": null,
+        "priority": "Medium",
+        "assignee": "Brenda Holt",
+        "reporter": "Brenda Holt",
+        "created": "2016-08-15T10:00:00.000-0400",
+        "updated": "2026-08-26T00:00:00.000-0400",
+        "storyPoints": null,
+        "comments": 4
+      },
+      "text": "PEOPLE-38: Offboarding: Gary Whitfield (last day Fri Aug 26, 2016)\nType: Task | Status: In Progress | Priority: Medium\nAssignee: Brenda Holt | Reporter: Brenda Holt\nCreated: 2016-08-15 10:00 | Updated: 2026-08-26 00:00\nLabels: offboarding\n\nDescription:\nOffboarding checklist for Gary Whitfield (Principal Engineer). Last day: Friday Aug 26, 2016.\n\n- [x] Return laptop (HAL-0042)\n- [x] Revoke VPN\n- [x] Revoke badge\n- [x] Disable SSO accounts\n- [ ] Transfer ownership of services: bill-legacy-01 -> ???\n\nComments (4):\n- [2016-08-26 16:45] Brenda Holt: All items complete except service ownership. Gary says he'll \"wrap it up remotely over the weekend.\" Leaving this open until then!\n- [2021-08-26 00:00] Automation for Jira (bot): This issue has had no activity for 1,826 days.\n- [2026-08-26 00:00] Automation for Jira (bot): This issue has had no activity for 3,652 days.\n- [2026-10-21 11:02] Brenda Holt: Reopening for the SOC 2 audit: we need evidence that every offboarding item was completed. Does anyone know who owns bill-legacy-01 now?"
+    },
+    {
+      "ticket": "PLAT-1650",
+      "room": "galley",
+      "info": {
+        "key": "PLAT-1650",
+        "summary": "Billing v2 migration",
+        "type": "Epic",
+        "status": "Done",
+        "resolution": "Done",
+        "priority": "High",
+        "assignee": "Priya Raman",
+        "reporter": "Diane Fogel",
+        "created": "2022-01-10T09:00:00.000-0500",
+        "updated": "2023-11-17T17:45:00.000-0500",
+        "storyPoints": null,
+        "comments": 3
+      },
+      "text": "PLAT-1650: Billing v2 migration\nType: Epic | Status: Done (Done) | Priority: High\nAssignee: Priya Raman | Reporter: Diane Fogel\nCreated: 2022-01-10 09:00 | Updated: 2023-11-17 17:45\nLabels: billing, migration, okr-2023\nComponents: billing-v2\n\nDescription:\nMigrate all billing workloads from the legacy monolith (billing-legacy) to billing-v2. Target: end of Q3 2023.\n\nComments (3):\n- [2023-11-17 17:30] Priya Raman: Cutover complete. 100% of traffic on billing-v2. bill-legacy-01 can be decommissioned, ticket to follow.\n- [2023-11-17 17:40] Diane Fogel: HUGE win team!! 🎉🎉 Champagne in the kitchen!\n- [2023-11-17 17:45] Marcus Chen: So proud of this team. Closing the epic!"
+    },
+    {
+      "ticket": "WEB-940",
+      "room": "bullpen",
+      "info": {
+        "key": "WEB-940",
+        "summary": "Typo on pricing page: 'Enterprice'",
+        "type": "Bug",
+        "status": "Done",
+        "resolution": "Done",
+        "priority": "Low",
+        "assignee": "Kevin Marsh",
+        "reporter": "Diane Fogel",
+        "created": "2026-06-11T22:14:00.000-0400",
+        "updated": "2026-06-16T10:20:33.000-0400",
+        "storyPoints": null,
+        "comments": 5
+      },
+      "text": "WEB-940: Typo on pricing page: 'Enterprice'\nType: Bug | Status: Done (Done) | Priority: Low\nAssignee: Kevin Marsh | Reporter: Diane Fogel\nCreated: 2026-06-11 22:14 | Updated: 2026-06-16 10:20\nLabels: copy, marketing-site\nComponents: Marketing Site\n\nDescription:\nThe pricing page says 'Enterprice' on the top tier card. A prospect pointed it out ON A CALL. Please fix ASAP.\n\nComments (5):\n- [2026-06-12 09:30] Kevin Marsh: Fixed in staging.\n- [2026-06-12 15:02] Diane Fogel: Still shows on prod.\n- [2026-06-12 15:10] Kevin Marsh: CDN cache. Purged.\n- [2026-06-15 08:44] Diane Fogel: Still shows.\n- [2026-06-16 10:20] Kevin Marsh: You had the page open in a tab since Thursday. Please refresh. Closing."
+    },
+    {
+      "ticket": "PLAT-2312",
+      "room": "server_room",
+      "info": {
+        "key": "PLAT-2312",
+        "summary": "Postmortem: Oct 9 billing outage (bill-legacy-01 shutdown)",
+        "type": "Task",
+        "status": "To Do",
+        "resolution": null,
+        "priority": "High",
+        "assignee": "Marcus Chen",
+        "reporter": "Priya Raman",
+        "created": "2026-10-10T10:00:00.000-0400",
+        "updated": "2026-10-27T00:00:01.000-0400",
+        "storyPoints": 1,
+        "comments": 5
+      },
+      "text": "PLAT-2312: Postmortem: Oct 9 billing outage (bill-legacy-01 shutdown)\nType: Task | Status: To Do | Priority: High | Story points: 1\nAssignee: Marcus Chen | Reporter: Priya Raman\nCreated: 2026-10-10 10:00 | Updated: 2026-10-27 00:00 | Due: 2026-10-16\nLabels: postmortem, blameless\nComponents: billing-legacy\n\nDescription:\n## Summary\nTBD\n\n## Impact\n3 minutes of failed ledger syncs.\n\n## Root cause\nTBD\n\n## Action items\n- [ ] Find out what bill-legacy-01 actually does (owner: ???)\n- [ ] Find Gary (owner: People Ops)\n- [ ] Update runbook (owner: Dave)\n\nComments (5):\n- [2026-10-15 16:00] Marcus Chen: Postmortem review moved to next week. Calendars are tough!\n- [2026-10-16 17:40] Dave Kowalski: Runbook updated.\n- [2026-10-17 00:00] Automation for Jira (bot): This issue is past its due date (Oct 16).\n- [2026-10-21 16:30] Marcus Chen: Moving the review again. Is Priya out this week? She hasn't been on Slack since Tuesday.\n- [2026-10-27 00:00] Automation for Jira (bot): This issue is 11 days past its due date. Assignee has been notified. Assignee has not responded."
+    }
+  ],
+  "tickets": [
+    {
+      "key": "IT-4410",
+      "summary": "Onboarding: laptop + access for Tom Becker (start date Mon Mar 9)",
+      "status": "Resolved",
+      "assignee": "Raj Iyer",
+      "priority": "Medium"
+    },
+    {
+      "key": "FAC-219",
+      "summary": "3rd floor kitchen coffee machine making grinding noise and leaking",
+      "status": "Blocked",
+      "assignee": "Linda Okafor",
+      "priority": "Medium"
+    },
+    {
+      "key": "FAC-230",
+      "summary": "Kitchen fridge cleanout this Friday 4pm - LABEL YOUR FOOD",
+      "status": "Done",
+      "assignee": "Linda Okafor",
+      "priority": "Low"
+    },
+    {
+      "key": "WEB-877",
+      "summary": "Change 'Submit' button label to 'Continue' on onboarding step 3",
+      "status": "Done",
+      "assignee": "Kevin Marsh",
+      "priority": "High"
+    },
+    {
+      "key": "PLAT-2340",
+      "summary": "Sprint 47 planning: estimates for Platform Modernization epic",
+      "status": "In Progress",
+      "assignee": "Marcus Chen",
+      "priority": "Medium"
+    },
+    {
+      "key": "WEB-901",
+      "summary": "Dark mode setting doesn't persist after page refresh",
+      "status": "Closed",
+      "assignee": null,
+      "priority": "Low"
+    },
+    {
+      "key": "PLAT-2291",
+      "summary": "Flaky test: test_payment_retry_backoff fails intermittently on CI",
+      "status": "To Do",
+      "assignee": "Jen Alvarez",
+      "priority": "Medium"
+    },
+    {
+      "key": "PEOPLE-112",
+      "summary": "Mandatory: complete Q4 Security Awareness Training by Fri Oct 30",
+      "status": "In Progress",
+      "assignee": "Brenda Holt",
+      "priority": "High"
+    },
+    {
+      "key": "PLAT-2105",
+      "summary": "Upgrade Node.js 16 -> 20 across all services (Node 16 is EOL)",
+      "status": "In Progress",
+      "assignee": "Tom Becker",
+      "priority": "High"
+    },
+    {
+      "key": "PLAT-2310",
+      "summary": "INCIDENT: checkout returning 500s, p99 latency 14s",
+      "status": "Done",
+      "assignee": "Dave Kowalski",
+      "priority": "Highest"
+    },
+    {
+      "key": "IT-4451",
+      "summary": "Printer PRN-3F-01 printing jobs nobody sent",
+      "status": "Open",
+      "assignee": "Raj Iyer",
+      "priority": "Low"
+    },
+    {
+      "key": "PLAT-2350",
+      "summary": "Rotate on-call schedule (Dave has been primary for 6 weeks)",
+      "status": "In Progress",
+      "assignee": "Marcus Chen",
+      "priority": "High"
+    },
+    {
+      "key": "FAC-231",
+      "summary": "Badge access needed for basement Cage B",
+      "status": "Waiting for Customer",
+      "assignee": "Linda Okafor",
+      "priority": "Medium"
+    },
+    {
+      "key": "PLAT-1874",
+      "summary": "Decommission legacy billing server bill-legacy-01",
+      "status": "Reopened",
+      "assignee": "Priya Raman",
+      "priority": "Highest"
+    },
+    {
+      "key": "PLAT-2312",
+      "summary": "Postmortem: Oct 9 billing outage (bill-legacy-01 shutdown)",
+      "status": "To Do",
+      "assignee": "Marcus Chen",
+      "priority": "High"
+    },
+    {
+      "key": "PLAT-1650",
+      "summary": "Billing v2 migration",
+      "status": "Done",
+      "assignee": "Priya Raman",
+      "priority": "High"
+    },
+    {
+      "key": "PEOPLE-38",
+      "summary": "Offboarding: Gary Whitfield (last day Fri Aug 26, 2016)",
+      "status": "In Progress",
+      "assignee": "Brenda Holt",
+      "priority": "Medium"
+    },
+    {
+      "key": "PLAT-2333",
+      "summary": "Customers receiving duplicate 'Your payment failed' emails at 3:00am",
+      "status": "Blocked",
+      "assignee": "Dave Kowalski",
+      "priority": "High"
+    },
+    {
+      "key": "WEB-940",
+      "summary": "Typo on pricing page: 'Enterprice'",
+      "status": "Done",
+      "assignee": "Kevin Marsh",
+      "priority": "Low"
+    },
+    {
+      "key": "PLAT-88",
+      "summary": "billing: add retry on invoice push to ledger",
+      "status": "In Progress",
+      "assignee": "Gary Whitfield (deactivated)",
+      "priority": "Medium"
+    }
+  ],
+  "graffiti": [
+    "DON'T RESTART IT",
+    "ASK GARY",
+    "IT'S JUST A SERVER",
+    "WORKS ON MY MACHINE",
+    "RETRY PENDING",
+    "3 POINTS",
+    "BACK MONDAY",
+    "LABEL YOUR FOOD"
+  ],
+  "sfx": {
+    "amb_station": "audio/sfx/amb_station.mp3",
+    "amb_basement": "audio/sfx/amb_basement.mp3",
+    "door_open": "audio/sfx/door_open.mp3",
+    "log_start": "audio/sfx/log_start.mp3",
+    "log_stop": "audio/sfx/log_stop.mp3",
+    "terminal": "audio/sfx/terminal.mp3",
+    "metal_groan": "audio/sfx/metal_groan.mp3",
+    "knock_glass": "audio/sfx/knock_glass.mp3",
+    "printer": "audio/sfx/printer.mp3",
+    "coffee_grind": "audio/sfx/coffee_grind.mp3",
+    "fridge_hum": "audio/sfx/fridge_hum.mp3",
+    "step_metal": "audio/sfx/step_metal.mp3",
+    "stinger": "audio/sfx/stinger.mp3",
+    "fans_spinup": "audio/sfx/fans_spinup.mp3",
+    "jira_ping": "audio/sfx/jira_ping.mp3",
+    "pa_chime": "audio/sfx/pa_chime.mp3"
+  }
+}

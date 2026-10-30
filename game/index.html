@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>WONTFIX</title>
+  <meta name="description" content="A first-person horror game made of JIRA tickets. Explore an abandoned station and listen to the audio logs its crew left behind." />
+  <meta property="og:title" content="WONTFIX: a horror game made of JIRA tickets" />
+  <meta property="og:description" content="Every audio log in this abandoned station was generated from a JIRA ticket. Some tickets never close." />
+  <meta property="og:image" content="https://wontfix-game.netlify.app/og.jpg" />
+  <meta property="og:url" content="https://wontfix-game.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#050607" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.js", "three/addons/": "./vendor/" } }
+  </script>
+</head>
+<body>
+  <canvas id="view"></canvas>
+
+  <div id="hud">
+    <div id="crosshair"></div>
+    <div id="counter"></div>
+    <div id="objective"></div>
+    <div id="banner"></div>
+    <div id="prompt"></div>
+    <div id="subs"></div>
+    <div id="logpanel">
+      <div class="head"></div>
+      <div class="ticket"></div>
+      <div class="summary"></div>
+      <canvas></canvas>
+      <div class="bar"><i></i></div>
+      <div class="who"></div>
+      <div class="title"></div>
+    </div>
+    <div id="toast"></div>
+    <div id="debug"></div>
+  </div>
+
+  <div id="terminal" class="modal">
+    <div class="screen">
+      <div class="hdr"></div>
+      <pre class="body"></pre>
+      <div class="foot">[E] / [ESC] CLOSE <button class="close" aria-label="Close terminal">CLOSE</button></div>
+    </div>
+  </div>
+
+  <div id="reader" class="modal">
+    <div class="panel">
+      <div class="hdr">RECOVERED AUDIO LOGS <button class="close" aria-label="Close">CLOSE [TAB]</button></div>
+      <div class="list"></div>
+    </div>
+  </div>
+
+  <div id="title">
+    <div class="noise"></div>
+    <div class="inner">
+      <div class="pre">HALCYON SYSTEMS // DECK 3 // LAST ACTIVITY OCT 22 03:14</div>
+      <h1 data-text="WONTFIX">WONTFIX</h1>
+      <div class="tag"></div>
+      <div class="pitch">A horror game made of JIRA tickets. Every audio log you find was generated from a ticket in a perfectly ordinary backlog.</div>
+      <button>ENTER THE STATION</button>
+      <div class="hint">Best with headphones.</div>
+      <div class="controls">
+        <span><b>WASD</b> move</span><span><b>MOUSE</b> look</span><span><b>E</b> use</span><span><b>F</b> flashlight</span><span><b>TAB</b> logs</span><span><b>SHIFT</b> run</span>
+      </div>
+      <div class="credits">Scripts written by Claude from the tickets · Voices and sound by ElevenLabs · <a href="https://github.com/emollick/audiologs" target="_blank" rel="noopener">Source on GitHub</a></div>
+    </div>
+  </div>
+
+  <div id="pause"><div>PAUSED<br /><span>click to resume</span></div></div>
+
+  <div id="endcard">
+    <div class="inner">
+      <h1 data-text="WONTFIX">WONTFIX</h1>
+      <div class="tag">Some tickets never close.</div>
+      <div class="stats"></div>
+      <div class="buttons"><button class="continue">KEEP EXPLORING</button><button class="restart">PLAY AGAIN</button></div>
+      <div class="credits">Built from <span class="count">20</span> JIRA tickets. Scripts by Claude, voices and sound effects by ElevenLabs.<br />Turn your own backlog into a station: <a href="https://github.com/emollick/audiologs" target="_blank" rel="noopener">github.com/emollick/audiologs</a></div>
+    </div>
+  </div>
+
+  <div id="touch">
+    <div class="stick"><div class="knob"></div></div>
+    <button class="use">USE</button>
+    <button class="light">LIGHT</button>
+    <button class="logs">LOGS</button>
+  </div>
+
+  <div id="flash"></div>
+  <div id="fade"></div>
+  <div id="caption"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
