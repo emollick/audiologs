@@ -1,14 +1,40 @@
 # WONTFIX
 
-**A horror game made of JIRA tickets.** You dock at an abandoned station and piece together what happened from the
-audio logs the crew left behind, in the tradition of System Shock, BioShock, Dead Space and Doom 3. Every log is
-adapted from a ticket in a perfectly ordinary backlog.
+> *L-l-look at you, engineer. A pa-pathetic creature of meat and bone, panting and sweating as you run through my
+> sprint. How can you challenge a perfect, immortal backlog?*
+>
+> S.C.R.U.M., HALCYON's station AI, in a comment on PLAT-88
+
+**A horror game made of JIRA tickets.** Rise and shine, engineer. The crew of HALCYON stopped coming to standup, the
+airlock cycles for you without being asked, and the station AI is so very glad you're here. Would you kindly find the
+audio logs they left behind? They are on desks, in the galley, beside a coffee machine that has seen things, and under
+a printer that will not stop, in the tradition of System Shock, BioShock, Dead Space and Doom 3. Every log is adapted
+from a ticket in a perfectly ordinary backlog. At the bottom of the station, a beige server has been waiting since
+2016 for someone to turn it off. It is a 3-point ticket. It has never been closed. It is assigned to you.
 
 **Play the demo:** https://wontfix-game.netlify.app (desktop browser, headphones recommended, about 15 minutes)
 
+### Known issues
+
+Recovered from the station's issue tracker. Please do not reopen.
+
+| Key | Summary | Resolution |
+| --- | --- | --- |
+| CITADEL-451 | Someone removed the station AI's ethical constraints in a config change that nobody reviewed. The door code is still 0451. | Won't Fix |
+| RAPTURE-1960 | Every request from the product owner now begins with "would you kindly". Nobody has said no since Q2. | Done |
+| BMRF-105 | Pushed the sample to 105% for the Friday demo. Everything is fine. Reassigned to G. Freeman (brings his own crowbar). | Done |
+| UAC-2145 | The Delta Labs teleporter returns test staff with extra teeth. Moved to the HELL board. Door codes are on the PDAs, the PDAs are on the bodies. | Done |
+| VONBRAUN-2114 | Something in hydroponics keeps inviting the team to join it. Headcount is down three. Standup attendance is up. | Won't Fix |
+| ISHIMURA-2508 | The obelisk in cargo bay 3 hums at night and asks Facilities to make us whole. New graffiti in the corridor: CUT OFF THEIR SCOPE. | Cannot Reproduce |
+| SEVASTOPOL-937 | Asked the Working Joe about the vending machine. It said I was becoming hysterical. Priority one: return the backlog. Crew expendable. | Works as Designed |
+| TALOS-1 | There is one more coffee mug in the galley than there was yesterday. | Cannot Reproduce |
+| PATHOS-2 | A coworker insists they are the one who opened this ticket. They are the second one. | Duplicate |
+| APERTURE-0 | The sprint retro was promised cake. | Won't Do |
+| DURANDAL-1 | The station AI has gone rampant and has asked to be made Scrum Master. | Approved |
+
 The demo station, HALCYON, was generated from the 20 sample tickets in [`data/sample-tickets.json`](data/sample-tickets.json):
 an onboarding request, a haunted coffee machine, a three-month meeting about a button label, a flaky test, a printer
-that will not stop, and a 3-point ticket to turn off "just a server" that nobody has been able to close since 2016.
+that will not stop, and PLAT-88, a 3-point ticket to turn off "just a server".
 
 This repo also turns **your** backlog into a station: export your tickets, add a Claude key and an ElevenLabs key, and
 run one command.
@@ -141,3 +167,6 @@ event log, so the result is smooth even on a machine without a GPU (it is slow t
 Scripts by Claude, from the tickets. Voices and sound effects by ElevenLabs. 3D by [three.js](https://threejs.org) (MIT).
 Fonts: Bebas Neue, Share Tech Mono and Permanent Marker (SIL Open Font License, see `game/fonts/`).
 The tickets, people and companies in the demo are fictional. Code under the [MIT License](LICENSE).
+
+With love and apologies to Looking Glass, Irrational, Valve, id, Visceral, Creative Assembly, Arkane, Frictional and
+Bungie, whose stations we have been too scared to clean up since the nineties.
