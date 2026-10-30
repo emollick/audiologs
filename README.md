@@ -158,7 +158,8 @@ touch controls.
 ## Recording a trailer
 
 `npm run trailer` drives the game frame by frame in a headless browser and mixes the sound offline from the game's own
-event log, so the result is smooth even on a machine without a GPU (it is slow there, though). It needs Playwright
+event log, so the result is smooth even on a machine without a GPU (it is slow there, though; `-- --scale 1` renders
+720p in about half the time). It needs Playwright
 (`npm i -D playwright && npx playwright install chromium`) and `ffmpeg`. The shot list is at the top of
 [`scripts/record-trailer.js`](scripts/record-trailer.js).
 

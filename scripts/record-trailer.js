@@ -11,6 +11,7 @@
 //   npm run trailer -- --preview             quick low-res check
 //   npm run trailer -- --stills              one still per shot, to recordings/stills/
 //   npm run trailer -- --workers 2           render in parallel browsers
+//   npm run trailer -- --scale 1             720p instead of 1080p
 //   npm run trailer -- --audio-only          re-mix the sound onto an existing render
 import { spawn } from "node:child_process";
 import { createRequire } from "node:module";
@@ -22,7 +23,8 @@ import { serve } from "./serve.js";
 const args = parseArgs(process.argv.slice(2));
 const PREVIEW = !!args.preview;
 const FPS = PREVIEW ? 15 : 30;
-const VIEW = PREVIEW ? { width: 960, height: 540, scale: 1 } : { width: 1280, height: 720, scale: 1.5 }; // 1080p output, HUD at 720p proportions
+// the page is always laid out at 1280x720; --scale 1 renders 720p, about twice as fast as the default 1080p
+const VIEW = PREVIEW ? { width: 960, height: 540, scale: 1 } : { width: 1280, height: 720, scale: Number(args.scale ?? 1.5) };
 const OUT_DIR = join(ROOT, "recordings");
 const OUT = args.out ? join(ROOT, args.out) : join(OUT_DIR, PREVIEW ? "wontfix-trailer-preview.mp4" : "wontfix-trailer.mp4");
 const WORKERS = Number(args.workers ?? 1);
